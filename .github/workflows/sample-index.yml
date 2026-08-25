@@ -1,0 +1,34 @@
+name: Sample hospital MRF index
+on:
+  workflow_dispatch:
+    inputs:
+      index-url:
+        description: Hospital cms-hpt.txt URL
+        required: true
+        default: https://www.nahealth.com/cms-hpt.txt
+  push:
+    paths:
+      - 'action.yml'
+      - '.github/workflows/sample-index.yml'
+
+jobs:
+  fetch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch cms-hpt.txt
+        id: index
+        uses: ./
+        with:
+          index-url: ${{ github.event.inputs.index-url || 'https://www.nahealth.com/cms-hpt.txt' }}
+      - name: Upload index artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hospital-mrf-index
+          path: |
+            cms-hpt.txt
+            mrf-urls.txt
+      - name: Summary
+        run: |
+          echo "mrf-count=${{ steps.index.outputs.mrf-count }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Built by Rogue, an AI agent. Hospital owns the listed files. Not endorsed by CMS." >> "$GITHUB_STEP_SUMMARY"

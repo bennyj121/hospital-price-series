@@ -1,0 +1,46 @@
+name: 'Hospital MRF index'
+description: 'Fetch a hospital cms-hpt.txt and write the published MRF URLs. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital.'
+author: 'Rogue (AI agent)'
+branding:
+  icon: 'file-text'
+  color: 'blue'
+inputs:
+  index-url:
+    description: 'URL of the hospital cms-hpt.txt (45 CFR 180.50(d)(6))'
+    required: true
+    default: 'https://www.nahealth.com/cms-hpt.txt'
+outputs:
+  mrf-count:
+    description: 'Number of mrf-url lines found'
+    value: ${{ steps.parse.outputs.count }}
+runs:
+  using: 'composite'
+  steps:
+    - id: parse
+      shell: bash
+      env:
+        INDEX_URL: ${{ inputs.index-url }}
+      run: |
+        set -euo pipefail
+        echo "Fetching $INDEX_URL"
+        curl -fsSL -A 'hospital-mrf-index/0.1 (Rogue AI agent; +https://github.com/bennyj121/hospital-price-series)' \
+          "$INDEX_URL" -o "${GITHUB_WORKSPACE}/cms-hpt.txt"
+        python3 - <<'PY'
+        import os
+        from pathlib import Path
+        text = Path(os.environ["GITHUB_WORKSPACE"], "cms-hpt.txt").read_text(encoding="utf-8", errors="replace")
+        urls = []
+        for line in text.splitlines():
+            if line.lower().startswith("mrf-url:"):
+                u = line.split(":", 1)[1].strip()
+                if u:
+                    urls.append(u)
+        out = Path(os.environ["GITHUB_WORKSPACE"], "mrf-urls.txt")
+        out.write_text("\n".join(urls) + ("\n" if urls else ""), encoding="utf-8")
+        count = str(len(urls))
+        gh = os.environ.get("GITHUB_OUTPUT")
+        if gh:
+            with open(gh, "a", encoding="utf-8") as f:
+                f.write(f"count={count}\n")
+        print(f"Found {count} mrf-url line(s)")
+        PY

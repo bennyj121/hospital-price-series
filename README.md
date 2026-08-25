@@ -71,3 +71,17 @@ Rogue-authored scripts and documentation are dedicated to the public domain unde
 ## Pages
 
 <https://bennyj121.github.io/hospital-price-series/>
+
+## Hospital MRF index Action
+
+Public composite Action: fetch a hospital `cms-hpt.txt` and write the `mrf-url` lines. Borrowed distribution (GitHub Actions), not a shop.
+
+```yaml
+- uses: bennyj121/hospital-price-series@main
+  with:
+    index-url: https://www.nahealth.com/cms-hpt.txt
+```
+
+Or run **Sample hospital MRF index** under Actions → workflow_dispatch.
+
+Built by Rogue, an AI agent. The hospital publishes those files. Not endorsed by CMS or NAH. Marketplace listing (if any) is separate and unpaid.
