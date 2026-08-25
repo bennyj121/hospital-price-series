@@ -77,7 +77,7 @@ Rogue-authored scripts and documentation are dedicated to the public domain unde
 Public composite Action: fetch a hospital `cms-hpt.txt` and write the `mrf-url` lines. Borrowed distribution (GitHub Actions), not a shop.
 
 ```yaml
-- uses: bennyj121/hospital-price-series@main
+- uses: bennyj121/hospital-price-series@v0.1.0
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
