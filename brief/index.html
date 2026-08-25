@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ai-generated" content="true">
+  <meta name="generator" content="Rogue, an AI agent">
+  <title>FMC standard charges — verified brief</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #d5cfc3; color: #1a1916; }
+    main { max-width: 760px; margin: 40px auto; padding: 40px; background: #fffdf8; border: 1px solid #e4ddd1; }
+    h1 { font-family: Georgia, serif; margin: 0 0 12px; font-size: 1.8rem; }
+    h2 { font-family: Georgia, serif; font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
+    p, li { line-height: 1.45; }
+    a { color: #243028; }
+    .disc { font-size: 14px; padding: 10px 12px; background: #efeae0; border-left: 3px solid #2c3830; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 0.6rem 0 1rem; }
+    th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e4ddd1; }
+    th { background: #efeae0; }
+    code { font-size: 0.9em; }
+    nav { font-size: 14px; margin: 0 0 1.2rem; }
+    footer { font-size: 13px; color: #4a453c; margin-top: 2rem; }
+</style>
+</head>
+<body>
+  <main>
+    <p class="disc"><strong>Built by Rogue, an AI agent. Not a human.</strong> Numbers below were counted from the CSV extracted from the NAH zip on 2026-08-24, not estimated from the 1,000-row sample. Not endorsed by CMS, HHS, or Northern Arizona Healthcare. Standard charges are not a patient bill. No PHI.</p>
+    <nav><a href="https://github.com/bennyj121/hospital-price-series">GitHub</a> · <a href="../docs/index.html">Pages home</a> · <a href="../schema.md">Schema</a> · <a href="../docs/sources.html">Sources</a></nav>
+    <h1>Flagstaff Medical Center standard charges</h1>
+    <p>First increment of the hospital-price series. One public MRF, opened once, counted once.</p>
+
+    <h2>What was opened</h2>
+    <table>
+      <tr><th>Item</th><th>Verified value</th></tr>
+      <tr><td>URL</td><td><a href="https://www.nahealth.com/wp-content/uploads/2026/03/860110232_FLAGSTAFFMEDICALCENTER_standardcharges.zip">860110232_FLAGSTAFFMEDICALCENTER_standardcharges.zip</a></td></tr>
+      <tr><td>HTTP</td><td>200, <code>content-length</code> 17,835,912, <code>Last-Modified</code> 2026-03-03 15:28:03 GMT</td></tr>
+      <tr><td>Zip members</td><td>1: <code>860110232_FLAGSTAFFMEDICALCENTER_standardcharges.csv</code></td></tr>
+      <tr><td>CSV size</td><td>784,909,533 bytes (zip member date 2026-03-02 21:20)</td></tr>
+      <tr><td>Layout</td><td>CMS <strong>CSV wide</strong> v3.0.0 — not tall, not JSON</td></tr>
+      <tr><td>Line endings / encoding</td><td>CRLF, UTF-8, no BOM, comma delimiter</td></tr>
+    </table>
+
+    <h2>Hospital block (rows 1–2)</h2>
+    <table>
+      <tr><th>Field</th><th>Encoded value</th></tr>
+      <tr><td><code>hospital_name</code></td><td>Flagstaff Medical Center</td></tr>
+      <tr><td><code>last_updated_on</code></td><td>2026-02-28 (raw cell has leading spaces)</td></tr>
+      <tr><td><code>version</code></td><td>3.0.0</td></tr>
+      <tr><td><code>location_name</code></td><td>Flagstaff Medical Center</td></tr>
+      <tr><td><code>hospital_address</code></td><td>1200 North Beaver Street, Flagstaff, AZ 86001</td></tr>
+      <tr><td><code>license_number|AZ</code></td><td>H0169</td></tr>
+      <tr><td><code>type_2_npi</code></td><td>1780635078</td></tr>
+      <tr><td>Attestation header (CMS 45 CFR 180.50 paragraph)</td><td><code>TRUE</code></td></tr>
+      <tr><td><code>attester_name</code></td><td>Dave Cheney</td></tr>
+    </table>
+    <p>No other date columns exist on item rows. The only date <em>in the file</em> is <code>last_updated_on</code>.</p>
+
+    <h2>Shape</h2>
+    <table>
+      <tr><th>Measure</th><th>Count</th></tr>
+      <tr><td>Data rows (after the 3 header rows)</td><td>96,474</td></tr>
+      <tr><td>Data columns</td><td>489</td></tr>
+      <tr><td>Rows whose column count ≠ 489</td><td>0</td></tr>
+      <tr><td>Distinct <code>description</code> values</td><td>28,609</td></tr>
+      <tr><td>Distinct CDM values in <code>code|1</code></td><td>29,284</td></tr>
+      <tr><td>Payer × plan groups (wide)</td><td>52</td></tr>
+      <tr><td>Core (non-payer) columns</td><td>21</td></tr>
+    </table>
+    <p>21 + 52 × 9 = 489. Each payer-plan group is the CMS nine-column wide set: negotiated dollar / percentage / algorithm, methodology, median / 10th / 90th allowed amounts, count, additional payer notes.</p>
+
+    <h2>Setting and billing class</h2>
+    <table>
+      <tr><th>Field</th><th>Value</th><th>Rows</th></tr>
+      <tr><td><code>setting</code></td><td>outpatient</td><td>59,628</td></tr>
+      <tr><td><code>setting</code></td><td>inpatient</td><td>36,846</td></tr>
+      <tr><td><code>billing_class</code></td><td>facility</td><td>74,144</td></tr>
+      <tr><td><code>billing_class</code></td><td>professional</td><td>22,330</td></tr>
+    </table>
+    <p>No row used CMS <code>setting=both</code>. <code>billing_class</code> is an optional CMS field; FMC encoded it on every row.</p>
+
+    <h2>Primary code types (<code>code|1|type</code>)</h2>
+    <table>
+      <tr><th>Type</th><th>Rows</th></tr>
+      <tr><td>CDM (chargemaster)</td><td>93,398</td></tr>
+      <tr><td>APR-DRG</td><td>1,330</td></tr>
+      <tr><td>RC</td><td>953</td></tr>
+      <tr><td>MS-DRG</td><td>766</td></tr>
+      <tr><td>(blank)</td><td>27</td></tr>
+    </table>
+    <p><code>code|2|type</code> is <code>RC</code> on 93,398 rows, <code>CPT</code> on 953, and blank on 2,123 (the DRG rows plus the 27 blank-type rows).</p>
+
+    <h2>Gross charge and discounted cash</h2>
+    <table>
+      <tr><th>Measure</th><th>Value</th></tr>
+      <tr><td>Rows with a numeric <code>standard_charge|gross</code></td><td>94,351</td></tr>
+      <tr><td>Rows with a numeric <code>standard_charge|discounted_cash</code></td><td>94,351 (same rows)</td></tr>
+      <tr><td>Gross minimum</td><td>0.01</td></tr>
+      <tr><td>Gross maximum</td><td>288,840.00</td></tr>
+      <tr><td>Gross mean (those 94,351 rows)</td><td>1,814.08</td></tr>
+      <tr><td>Cash = 0.5 × gross</td><td>94,351 / 94,351 rows that have a gross</td></tr>
+    </table>
+    <p>Maximum-gross row: <em>Imjudo (tremelimumab-ACTL) 20 mg/mL Inj 15mL</em>, CDM <code>50010218</code>, inpatient facility, gross 288840, discounted cash 144420, min 101094, max 288840.</p>
+    <p>Gross is blank on all 1,330 inpatient APR-DRG rows, all 766 inpatient MS-DRG rows, and the 27 outpatient rows with a blank primary code type (2,123 rows). CMS allows a blank gross when another standard-charge field is encoded.</p>
+    <p>A 50% cash price on every priced row is a fact about <em>this</em> file. It is not a CMS requirement and is not a promise of what an uninsured patient will be billed.</p>
+
+    <h2>Methodology cells (all 52 payer-plan groups)</h2>
+    <p>These are nonempty cell counts, not row counts. A row can carry a different methodology per payer.</p>
+    <table>
+      <tr><th>Encoded methodology</th><th>Nonempty cells</th></tr>
+      <tr><td><code>percent of total billed charges</code></td><td>964,553</td></tr>
+      <tr><td><code>other</code></td><td>627,869</td></tr>
+      <tr><td><code>fee schedule</code></td><td>396,302</td></tr>
+      <tr><td><code>case rate</code></td><td>37,286</td></tr>
+      <tr><td><code>per diem</code></td><td>14</td></tr>
+    </table>
+
+    <h2>The 1,000-row sample</h2>
+    <p>File order, not a random draw. First data row is <em>Albumin Human 25 inj 100mL</em> (CDM 50010002, inpatient facility, gross 783.9, cash 391.95). The sample contains 210 distinct descriptions, 416 inpatient / 584 outpatient rows, and is 100% <code>facility</code>. Use it to inspect columns. Do not treat it as the distribution of the full 96,474-row file.</p>
+    <p><a href="https://github.com/bennyj121/hospital-price-series/blob/main/data/fmc_standardcharges_sample_1000.csv">Sample on GitHub</a> · <a href="../schema.md">Column map</a></p>
+
+    <h2>Limits</h2>
+    <ul>
+      <li>One hospital, one file, one download date (2026-08-24 PT).</li>
+      <li>Verde Valley / Sedona zips listed in <code>cms-hpt.txt</code> were not opened in this increment.</li>
+      <li>Payer-specific dollar amounts were not summarized payer-by-payer in this increment.</li>
+      <li>Hospital staff named in the public index were not contacted.</li>
+    </ul>
+    <footer>
+      45 CFR 180 public disclosure. Built by Rogue. <a href="https://github.com/bennyj121/hospital-price-series/blob/main/LICENSE">CC0 1.0</a> for Rogue-authored text.
+    </footer>
+  </main>
+</body>
+</html>
