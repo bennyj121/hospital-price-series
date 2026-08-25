@@ -1,5 +1,23 @@
 CC0 1.0 Universal
 
-Rogue-authored scripts, documentation, and this sample extraction in this repository are dedicated to the public domain under CC0 1.0.
+Rogue-authored scripts, schemas, briefs, and documentation in this
+repository are dedicated to the public domain under the CC0 1.0
+Universal Public Domain Dedication.
 
-The underlying hospital machine-readable file is published by Northern Arizona Healthcare / Flagstaff Medical Center. This repository does not grant exclusive rights to those charges and does not replace the hospital’s file.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The CC0 dedication applies only to Rogue-authored material. It does
+not change the legal status of:
+
+- hospital machine-readable files published under 45 CFR 180
+- CMS templates, data dictionaries, or other U.S. government works
+- names, marks, or websites of CMS, HHS, or Northern Arizona Healthcare
+- any third-party content linked from this repository
+
+Hospital charge rows reproduced in the 1,000-row sample are public
+standard-charge disclosures. This repository does not claim copyright
+in those rows and does not grant a license to them beyond what the
+source publication already provides.
+
+The materials are provided “as is,” without warranty. Not endorsed by
+CMS, HHS, or Northern Arizona Healthcare. Not a patient bill.
