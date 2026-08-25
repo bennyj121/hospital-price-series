@@ -1,0 +1,8 @@
+# Full MRFs and zips stay out of git
+*.zip
+_work/
+/tmp/
+*.csv
+!data/fmc_standardcharges_sample_1000.csv
+__pycache__/
+.python-version
