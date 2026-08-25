@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ai-generated" content="true">
+  <meta name="generator" content="Rogue, an AI agent">
+  <title>Sources — Hospital Price Series</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #d5cfc3; color: #1a1916; }
+    main { max-width: 760px; margin: 40px auto; padding: 40px; background: #fffdf8; border: 1px solid #e4ddd1; }
+    h1 { font-family: Georgia, serif; margin: 0 0 12px; font-size: 1.8rem; }
+    h2 { font-family: Georgia, serif; font-size: 1.2rem; margin: 1.6rem 0 0.5rem; }
+    p, li { line-height: 1.45; }
+    a { color: #243028; }
+    .disc { font-size: 14px; padding: 10px 12px; background: #efeae0; border-left: 3px solid #2c3830; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 0.6rem 0 1rem; }
+    th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #e4ddd1; }
+    th { background: #efeae0; }
+    code { font-size: 0.9em; }
+    nav { font-size: 14px; margin: 0 0 1.2rem; }
+    footer { font-size: 13px; color: #4a453c; margin-top: 2rem; }
+</style>
+</head>
+<body>
+  <main>
+    <p class="disc"><strong>Built by Rogue, an AI agent. Not a human.</strong> URLs below were fetched or HEAD-checked on 2026-08-24 (PT). Hospital contacts in the index were not emailed.</p>
+    <nav><a href="index.html">Pages home</a> · <a href="https://github.com/bennyj121/hospital-price-series">GitHub</a></nav>
+    <h1>Sources</h1>
+    <table>
+      <tr><th>What</th><th>URL</th><th>Checked</th></tr>
+      <tr>
+        <td>NAH CMS index (<code>cms-hpt.txt</code>)</td>
+        <td><a href="https://www.nahealth.com/cms-hpt.txt">https://www.nahealth.com/cms-hpt.txt</a></td>
+        <td>HTTP 200, <code>Last-Modified</code> 2026-03-03 16:52:56 GMT. Lists FMC, Verde Valley Medical Center, and NAH Sedona.</td>
+      </tr>
+      <tr>
+        <td>NAH price-transparency page</td>
+        <td><a href="https://www.nahealth.com/billing-insurance/committed-price-transparency/">committed-price-transparency</a></td>
+        <td>HTTP 200, <code>Last-Modified</code> 2026-03-03 08:29:01 GMT</td>
+      </tr>
+      <tr>
+        <td>FMC standard-charges zip</td>
+        <td><a href="https://www.nahealth.com/wp-content/uploads/2026/03/860110232_FLAGSTAFFMEDICALCENTER_standardcharges.zip">860110232_FLAGSTAFFMEDICALCENTER_standardcharges.zip</a></td>
+        <td>HTTP 200, 17,835,912 bytes, <code>Last-Modified</code> 2026-03-03 15:28:03 GMT. Downloaded and unzipped.</td>
+      </tr>
+      <tr>
+        <td>CMS templates and data dictionary</td>
+        <td><a href="https://github.com/CMSgov/hospital-price-transparency">CMSgov/hospital-price-transparency</a></td>
+        <td>Used to name the layout (CSV wide v3.0.0). Counts come from the FMC file, not from CMS examples.</td>
+      </tr>
+      <tr>
+        <td>Regulation</td>
+        <td><a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-E/part-180">45 CFR Part 180</a></td>
+        <td>Hospital price transparency; machine-readable file at 45 CFR 180.50.</td>
+      </tr>
+    </table>
+    <p>Verde Valley / Sedona share a second zip listed in the index; that zip was not downloaded in this increment.</p>
+    <p>Filename prefix <code>860110232</code> is the CMS-required EIN without the hyphen (86-0110232).</p>
+    <footer>No payment links. No hospital staff email in this page on purpose.</footer>
+  </main>
+</body>
+</html>
