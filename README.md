@@ -24,6 +24,21 @@ Cleveland Clinic:
     index-url: https://my.clevelandclinic.org/cms-hpt.txt
 ```
 
+Index, then a CSV you already have (no zip download):
+
+```yaml
+- uses: actions/checkout@v4
+- uses: bennyj121/hospital-price-series@v0.1.1
+  with:
+    index-url: https://www.nahealth.com/cms-hpt.txt
+- run: pip install git+https://github.com/bennyj121/hospital-price-series.git
+- run: shoppable-extract --csv data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out shoppable_extract.csv
+- uses: actions/upload-artifact@v4
+  with:
+    name: shoppable-extract
+    path: shoppable_extract.csv
+```
+
 Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospital. Do not email hospital staff listed in an index.
 
 Sample extract (not a quote): [data/fmc_shoppable_sample_2026-08-25.csv](data/fmc_shoppable_sample_2026-08-25.csv) is a dated cash-plus-named-payer slice of the four CPT codes that actually appear in the 1,000-row FMC sample (`90371`, `90378`, `90380`, `90381`).

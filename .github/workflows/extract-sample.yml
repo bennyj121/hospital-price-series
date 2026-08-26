@@ -1,0 +1,17 @@
+name: Extract from local sample CSV
+on:
+  workflow_dispatch:
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bennyj121/hospital-price-series@v0.1.1
+        with:
+          index-url: https://www.nahealth.com/cms-hpt.txt
+      - run: pip install git+https://github.com/bennyj121/hospital-price-series.git
+      - run: shoppable-extract --csv data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out shoppable_extract.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shoppable-extract
+          path: shoppable_extract.csv
