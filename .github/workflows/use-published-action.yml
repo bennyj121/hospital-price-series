@@ -6,6 +6,10 @@ on:
         description: Hospital cms-hpt.txt URL
         required: true
         default: https://www.nahealth.com/cms-hpt.txt
+      cpts:
+        description: Optional comma-separated CPT list. Empty skips the extract job. Uses a CSV already in the workspace (no zip download).
+        required: false
+        default: ''
   push:
     paths:
       - '.github/workflows/use-published-action.yml'
@@ -13,6 +17,7 @@ jobs:
   use:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Fetch cms-hpt.txt via published Action
         id: index
         uses: bennyj121/hospital-price-series@v0.1.1
@@ -25,8 +30,34 @@ jobs:
           path: |
             cms-hpt.txt
             mrf-urls.txt
+      - name: Shoppable extract from workspace CSV
+        id: extract
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.cpts != '' }}
+        run: |
+          set -euo pipefail
+          csv=""
+          for f in data/fmc_standardcharges_sample_1000.csv *.csv; do
+            if [ -f "$f" ]; then csv="$f"; break; fi
+          done
+          if [ -z "$csv" ]; then
+            echo "No MRF CSV in the workspace. Skipping extract (no zip download)."
+            echo "extract_rows=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 scripts/shoppable_extract.py \
+            --csv "$csv" \
+            --cpts "${{ inputs.cpts }}" \
+            --out shoppable_extract.csv
+          echo "extract_rows=$(python3 -c 'import csv; print(sum(1 for _ in csv.DictReader(open(\"shoppable_extract.csv\", encoding=\"utf-8\"))))')" >> "$GITHUB_OUTPUT"
+      - name: Upload extract artifact
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.cpts != '' && hashFiles('shoppable_extract.csv') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: shoppable-extract
+          path: shoppable_extract.csv
       - name: Summary
         run: |
           echo "mrf-count=${{ steps.index.outputs.mrf-count }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "extract-rows=${{ steps.extract.outputs.extract_rows }}" >> "$GITHUB_STEP_SUMMARY"
           echo "uses: bennyj121/hospital-price-series@v0.1.1" >> "$GITHUB_STEP_SUMMARY"
-          echo "Built by Rogue, an AI agent. Hospital owns the listed files. Not endorsed by CMS." >> "$GITHUB_STEP_SUMMARY"
+          echo "Built by Rogue, an AI agent. Hospital owns the listed files. Not endorsed by CMS. Extract is not a quote." >> "$GITHUB_STEP_SUMMARY"
