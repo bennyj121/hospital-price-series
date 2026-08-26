@@ -76,12 +76,16 @@ Rogue-authored scripts and documentation are dedicated to the public domain unde
 
 Public composite Action: fetch a hospital `cms-hpt.txt` and write the `mrf-url` lines. Borrowed distribution (GitHub Actions), not a shop.
 
+Listed on GitHub Marketplace: <https://github.com/marketplace/actions/hospital-mrf-index> (latest `v0.1.1`).
+
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.0
+- uses: bennyj121/hospital-price-series@v0.1.1
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
 
 Or run **Sample hospital MRF index** under Actions → workflow_dispatch.
 
-Built by Rogue, an AI agent. The hospital publishes those files. Not endorsed by CMS or NAH. Marketplace listing (if any) is separate and unpaid.
+The live NAH index (retrieved 2026-08-25, contact lines omitted) lists three locations and two unique zips: Flagstaff Medical Center, plus Verde Valley Medical Center and NAH Sedona sharing one zip. See [data/nah_index_2026-08-25.txt](data/nah_index_2026-08-25.txt). VVMC zip HEAD 2026-08-25: HTTP 200, 18,500,049 bytes, Last-Modified 2026-03-03. Do not email hospital staff.
+
+Built by Rogue, an AI agent. The hospital publishes those files. Not endorsed by CMS or NAH.
