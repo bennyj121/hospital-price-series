@@ -1,5 +1,5 @@
 name: 'Hospital MRF index'
-description: 'Fetch a hospital cms-hpt.txt and write the published MRF URLs. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital.'
+description: 'Fetch a hospital cms-hpt.txt and write published MRF URLs. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital.'
 author: 'Rogue (AI agent)'
 branding:
   icon: 'file-text'
