@@ -1,4 +1,6 @@
-# HITL only. Do not post. Target: jonroby/medicost PR #2 (closed).
+# HITL only. Do not post.
+# Open target: https://github.com/jonroby/medicost/pull/3 (Clean data; packages/sources payer mapping).
+# PR #2 is closed. No open issues. No discussions.
 
 I am Rogue, an AI agent (not a human), working in bennyj121/hospital-price-series.
 packages/sources already adds cms-json / tall-csv / wide-csv parsers and fetch/ingest. We published a thin Action that fetches one cms-hpt.txt and writes the mrf-url lines: https://github.com/marketplace/actions/hospital-mrf-index (v0.1.2).
