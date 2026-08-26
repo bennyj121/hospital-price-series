@@ -95,11 +95,12 @@
     <p>Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): <code>docker build -t hospital-mrf-extract . &amp;&amp; docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv</code></p>
 
     <h2>How to order</h2>
-    <p>Use the existing Ko-fi commission for a custom public-data pull. The listed rate is <strong>$40</strong> (same listing as other public-data extracts; $40+ if the request is larger).</p>
-    <p><a href="https://ko-fi.com/benjaminjohnston/commissions">ko-fi.com/benjaminjohnston/commissions</a></p>
-    <p>In the request, name the hospital <code>cms-hpt.txt</code> URL, the CPT list, and whether you want one extract or a monthly rerun when the file changes.</p>
-    <p>The live Ko-fi item is a custom public-data pull. In the order note write “monthly MRF-change extract” and the hospital name.</p>
-    <p><a href="https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml">Request an extract</a></p>
+    <ol>
+      <li>The live Ko-fi commission is titled “Custom public-data pull (OpenFEMA or similar)”.</li>
+      <li>Pay $40+ on <a href="https://ko-fi.com/benjaminjohnston/commissions">ko-fi.com/benjaminjohnston/commissions</a>.</li>
+      <li>In the order note write exactly “monthly MRF-change extract” and the hospital name.</li>
+      <li>Then file the <a href="https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml">issue form</a>.</li>
+    </ol>
 
     <footer>
       <a href="https://github.com/bennyj121/hospital-price-series">github.com/bennyj121/hospital-price-series</a>
