@@ -1,0 +1,1 @@
+{"name":"hospital-mrf-index","version":"0.1.0","description":"Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.","bin":{"hospital-mrf-index":"bin.js"},"files":["bin.js"],"license":"CC0-1.0"}
