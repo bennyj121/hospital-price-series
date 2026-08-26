@@ -1,3 +1,5 @@
+Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
+
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
 # Hospital MRF index Action
