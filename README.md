@@ -24,6 +24,8 @@ Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospita
 
 Sample extract (not a quote): [data/fmc_shoppable_sample_2026-08-25.csv](data/fmc_shoppable_sample_2026-08-25.csv) is a dated cash-plus-named-payer slice of the four CPT codes that actually appear in the 1,000-row FMC sample (`90371`, `90378`, `90380`, `90381`).
 
+Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
+
 ---
 
 # Hospital Price Series
