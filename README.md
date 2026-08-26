@@ -6,6 +6,8 @@ Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no r
 
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
+Dated Last-Modified baseline for the \$40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
+
 [Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
 # Hospital MRF index Action
