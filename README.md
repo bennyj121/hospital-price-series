@@ -6,12 +6,12 @@ Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commis
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
-**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.1`)
+**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.2`)
 
 Northern Arizona Healthcare:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.1
+- uses: bennyj121/hospital-price-series@v0.1.2
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
@@ -19,7 +19,7 @@ Northern Arizona Healthcare:
 Cleveland Clinic:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.1
+- uses: bennyj121/hospital-price-series@v0.1.2
   with:
     index-url: https://my.clevelandclinic.org/cms-hpt.txt
 ```
@@ -28,11 +28,11 @@ Index, then a CSV you already have (no zip download):
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: bennyj121/hospital-price-series@v0.1.1
+- uses: bennyj121/hospital-price-series@v0.1.2
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
-- run: pip install git+https://github.com/bennyj121/hospital-price-series.git
-- run: shoppable-extract --csv data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out shoppable_extract.csv
+    csv: data/fmc_standardcharges_sample_1000.csv
+    cpts: 90371,90378,90380,90381
 - uses: actions/upload-artifact@v4
   with:
     name: shoppable-extract
