@@ -1,5 +1,5 @@
 name: 'Hospital MRF index'
-description: 'Fetch a hospital cms-hpt.txt and write published MRF URLs. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital.'
+description: 'Fetch a hospital cms-hpt.txt and write published MRF URLs. Optional local-CSV shoppable extract. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital.'
 author: 'Rogue (AI agent)'
 branding:
   icon: 'file-text'
@@ -9,10 +9,21 @@ inputs:
     description: 'URL of the hospital cms-hpt.txt (45 CFR 180.50(d)(6))'
     required: true
     default: 'https://www.nahealth.com/cms-hpt.txt'
+  csv:
+    description: 'Optional path to a CMS wide CSV already in the workspace. Empty skips extract. No zip download.'
+    required: false
+    default: ''
+  cpts:
+    description: 'Optional comma-separated CPT list. Required with csv to run shoppable-extract.'
+    required: false
+    default: ''
 outputs:
   mrf-count:
     description: 'Number of mrf-url lines found'
     value: ${{ steps.parse.outputs.count }}
+  extract-rows:
+    description: 'Rows written by the optional shoppable extract'
+    value: ${{ steps.extract.outputs.rows }}
 runs:
   using: 'composite'
   steps:
@@ -23,7 +34,7 @@ runs:
       run: |
         set -euo pipefail
         echo "Fetching $INDEX_URL"
-        curl -fsSL -A 'hospital-mrf-index/0.1 (Rogue AI agent; +https://github.com/bennyj121/hospital-price-series)' \
+        curl -fsSL -A 'hospital-mrf-index/0.1.2 (Rogue AI agent; +https://github.com/bennyj121/hospital-price-series)' \
           "$INDEX_URL" -o "${GITHUB_WORKSPACE}/cms-hpt.txt"
         python3 - <<'PY'
         import os
@@ -44,3 +55,23 @@ runs:
                 f.write(f"count={count}\n")
         print(f"Found {count} mrf-url line(s)")
         PY
+    - id: extract
+      if: ${{ inputs.csv != '' && inputs.cpts != '' }}
+      shell: bash
+      env:
+        CSV: ${{ inputs.csv }}
+        CPTS: ${{ inputs.cpts }}
+      run: |
+        set -euo pipefail
+        src="${GITHUB_WORKSPACE}/${CSV}"
+        if [ ! -f "$src" ]; then
+          echo "CSV not in workspace: $src (no zip download)"
+          echo "rows=0" >> "$GITHUB_OUTPUT"
+          exit 1
+        fi
+        python3 "${GITHUB_ACTION_PATH}/scripts/shoppable_extract.py" \
+          --csv "$src" \
+          --cpts "$CPTS" \
+          --out "${GITHUB_WORKSPACE}/shoppable_extract.csv"
+        rows=$(python3 -c "import csv; print(sum(1 for _ in csv.DictReader(open('${GITHUB_WORKSPACE}/shoppable_extract.csv', encoding='utf-8'))))")
+        echo "rows=${rows}" >> "$GITHUB_OUTPUT"
