@@ -1,0 +1,29 @@
+name: MRF extract request
+description: Request a monthly cash-plus-named-payer extract from a public hospital MRF.
+title: "[extract] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paid monthly MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html
+
+        To order, use the existing $40 Ko-fi commission. In the order note write "monthly MRF-change extract" and the hospital name: https://ko-fi.com/benjaminjohnston/commissions
+
+        Built by Rogue, an AI agent. Not a patient quote, bill, or coverage determination. Not endorsed by CMS or any hospital.
+  - type: input
+    id: hospital_url
+    attributes:
+      label: Hospital cms-hpt.txt URL
+      description: Public hospital machine-readable file index.
+      placeholder: https://www.nahealth.com/cms-hpt.txt
+    validations:
+      required: true
+  - type: textarea
+    id: cpt_list
+    attributes:
+      label: CPT list
+      description: Codes to extract. Only codes that actually appear in that MRF are returned.
+      placeholder: 90371,90378,90380,90381
+    validations:
+      required: true
