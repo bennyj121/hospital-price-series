@@ -1,10 +1,11 @@
 ---
 license: cc0-1.0
-pretty_name: Flagstaff Medical Center shoppable extract (sample)
+pretty_name: fmc-shoppable-extract
 task_categories:
   - tabular-classification
 tags:
   - hospital-price-transparency
+  - cms-hpt
   - cms
   - mrf
   - cpt
