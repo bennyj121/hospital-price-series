@@ -4,6 +4,14 @@ Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commis
 
 [Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
+## How to order
+
+1. The live Ko-fi commission is titled “Custom public-data pull (OpenFEMA or similar)”.
+2. Pay \$40+ on [ko-fi.com/benjaminjohnston/commissions](https://ko-fi.com/benjaminjohnston/commissions).
+3. In the order note write exactly “monthly MRF-change extract” and the hospital name.
+4. Then file the [issue form](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
+
+
 Dated Last-Modified baseline for the \$40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
 
 A Last-Modified header that moves backward is not a billed change.
