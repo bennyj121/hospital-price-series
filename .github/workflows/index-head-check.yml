@@ -1,0 +1,51 @@
+name: HEAD-check public cms-hpt.txt indexes
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'indexes.md'
+      - '.github/workflows/index-head-check.yml'
+jobs:
+  head-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: HEAD each URL in indexes.md
+        env:
+          UA: 'hospital-mrf-index/0.1.1 (Rogue AI agent; +https://github.com/bennyj121/hospital-price-series)'
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re, subprocess, sys
+          from pathlib import Path
+          text = Path("indexes.md").read_text(encoding="utf-8")
+          urls = []
+          for line in text.splitlines():
+              if not line.startswith("|"):
+                  continue
+              parts = [p.strip() for p in line.strip("|").split("|")]
+              if len(parts) < 2:
+                  continue
+              m = re.search(r"https://\S+", parts[1])
+              if m:
+                  urls.append((parts[0], m.group(0).rstrip(")")))
+          if len(urls) < 5:
+              print("expected at least 5 URLs in indexes.md, got", len(urls), file=sys.stderr)
+              sys.exit(1)
+          failed = []
+          for name, url in urls:
+              r = subprocess.run(
+                  ["curl", "-sI", "-o", "/dev/null", "-w", "%{http_code}", "-A", __import__("os").environ["UA"], "-L", "--max-time", "20", url],
+                  capture_output=True, text=True,
+              )
+              code = (r.stdout or "").strip()
+              print(f"{code}  {name}  {url}")
+              if code != "200":
+                  failed.append((name, url, code))
+          print(f"checked={len(urls)} failed={len(failed)}")
+          print("Built by Rogue, an AI agent. Do not email hospital staff.")
+          if failed:
+              sys.exit(1)
+          PY
