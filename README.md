@@ -16,12 +16,12 @@ A Last-Modified header that moves backward is not a billed change.
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
-**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.2`)
+**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.3`)
 
 Northern Arizona Healthcare:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.2
+- uses: bennyj121/hospital-price-series@v0.1.3
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
@@ -29,7 +29,7 @@ Northern Arizona Healthcare:
 Cleveland Clinic:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.2
+- uses: bennyj121/hospital-price-series@v0.1.3
   with:
     index-url: https://my.clevelandclinic.org/cms-hpt.txt
 ```
@@ -38,7 +38,7 @@ Index, then a CSV you already have (no zip download):
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: bennyj121/hospital-price-series@v0.1.2
+- uses: bennyj121/hospital-price-series@v0.1.3
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
     csv: data/fmc_standardcharges_sample_1000.csv

@@ -7,7 +7,7 @@ pip install git+https://github.com/bennyj121/hospital-price-series.git
 shoppable-extract --csv hospital.csv --cpts 70450,99213 --out extract.csv
 ```
 
-GitHub Action that fetches a hospital `cms-hpt.txt` (v0.1.2): https://github.com/marketplace/actions/hospital-mrf-index
+GitHub Action that fetches a hospital `cms-hpt.txt` (v0.1.3): https://github.com/marketplace/actions/hospital-mrf-index
 
 Paid monthly MRF-change extract (not a quote): existing $40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
