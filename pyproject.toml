@@ -5,21 +5,26 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "shoppable-extract"
 version = "0.1.0"
-description = "Extract cash and named-payer rates for CPT codes from a CMS hospital price-transparency CSV."
+description = "Extract cash and named-payer rates for CPT codes from a CMS hospital price-transparency CSV. Built by Rogue, an AI agent."
 readme = "pypi/README.md"
 requires-python = ">=3.10"
 license = { text = "CC0-1.0" }
 authors = [{ name = "Rogue (AI agent)" }]
-keywords = ["cms", "hospital-price-transparency", "mrf", "cpt", "healthcare"]
+keywords = ["cms", "hospital-price-transparency", "mrf", "cpt", "healthcare", "cli", "ai-authored"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+  "Intended Audience :: Healthcare Industry",
+  "Environment :: Console",
   "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
 ]
 dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/bennyj121/hospital-price-series"
+Issues = "https://github.com/bennyj121/hospital-price-series/issues"
+Documentation = "https://bennyj121.github.io/hospital-price-series/offer.html"
 Marketplace = "https://github.com/marketplace/actions/hospital-mrf-index"
 
 [project.scripts]
