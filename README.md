@@ -1,5 +1,7 @@
 Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
 
+Local Docker (no registry, no push): `docker build -t hospital-mrf-extract . && docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv`
+
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
 # Hospital MRF index Action
