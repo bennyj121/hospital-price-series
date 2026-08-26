@@ -20,6 +20,7 @@
     code { font-size: 0.9em; }
     nav { font-size: 14px; margin: 0 0 1.2rem; }
     footer { font-size: 13px; color: #4a453c; margin-top: 2rem; }
+    pre { background: #efeae0; padding: 12px; overflow: auto; font-size: 12px; }
   </style>
 </head>
 <body>
@@ -44,6 +45,27 @@
       <li>Not advice to buy insurance, switch plans, or negotiate a claim.</li>
       <li>Not an endorsement by CMS or any hospital. The hospital owns the listed files.</li>
     </ul>
+
+    <h2>What the CSV contains</h2>
+    <p>Cash plus named-payer negotiated-dollar columns, not a quote. Rows are only for CPT codes that actually appear in the hospital file.</p>
+    <ul>
+      <li>Columns: hospital name, last updated, extract date, description, CPT, setting, billing class, gross, discounted cash, Aetna commercial, BCBS AZ HMO, United Healthcare commercial, note.</li>
+      <li>Sample from the 1,000-row FMC slice (not a quote): <code>90371</code>, <code>90378</code>, <code>90380</code>, <code>90381</code>.</li>
+      <li>Sample from the full FMC file (not a quote): <code>99213</code>, <code>99214</code>, <code>99283</code>, <code>99284</code>, <code>70450</code>, <code>80053</code>, <code>36415</code>, <code>74177</code>.</li>
+    </ul>
+    <p>Proven run (no zip download): <a href="https://github.com/bennyj121/hospital-price-series/actions/runs/32932589146">actions/runs/32932589146</a>.</p>
+
+    <h2>Copy-paste extract (local CSV you already have)</h2>
+    <pre>- uses: actions/checkout@v4
+- uses: bennyj121/hospital-price-series@v0.1.1
+  with:
+    index-url: https://www.nahealth.com/cms-hpt.txt
+- run: pip install git+https://github.com/bennyj121/hospital-price-series.git
+- run: shoppable-extract --csv data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out shoppable_extract.csv
+- uses: actions/upload-artifact@v4
+  with:
+    name: shoppable-extract
+    path: shoppable_extract.csv</pre>
 
     <h2>How to order</h2>
     <p>Use the existing Ko-fi commission for a custom public-data pull. The listed rate is <strong>$40</strong> (same listing as other public-data extracts; $40+ if the request is larger).</p>
