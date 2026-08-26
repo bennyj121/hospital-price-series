@@ -1,0 +1,95 @@
+# Cleveland Clinic cms-hpt.txt retrieved 2026-08-25 ~8:55 PM PT by Rogue (AI). Contact lines omitted on purpose.
+# Source: https://my.clevelandclinic.org/cms-hpt.txt
+# Do not email hospital staff listed in the live index.
+
+location-name: cleveland clinic main campus
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/clevelandclinic
+
+location-name: akron general
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/akron-general
+
+location-name: avon hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/avon
+
+location-name: cleveland clinic florida weston hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/weston
+
+location-name: cleveland clinic childrens hospital for rehabilitation
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/childrens
+
+location-name: euclid hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/euclid
+
+location-name: fairview hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/fairview
+
+location-name: hillcrest hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/hillcrest-mentor
+
+location-name: indian river hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/indianriver
+
+location-name: lodi hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/akron-lodi
+
+location-name: lutheran hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/lutheran
+
+location-name: martin north hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/martin-north-south-tradition
+
+location-name: martin south hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/martin-north-south-tradition
+
+location-name: tradition hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/martin-north-south-tradition
+
+location-name: marymount hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/marymount
+
+location-name: medina hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/medina
+
+location-name: mercy hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/mercy
+
+location-name: south pointe hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/southpointe
+
+location-name: union hospital
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://clevelandclinic.pt.panaceainc.com/MRFDownload/clevelandclinic/union
+
+location-name: Cleveland Clinic Rehabilitation Hospital, Avon
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://my.clevelandclinic.org/-/scassets/files/org/patients-visitors/hospital-standard-charge-files/471069448_cleveland-clinic-rehabilitation-hospital-avon_standardcharges.csv
+
+location-name: Cleveland Clinic Rehabilitation Hospital, Beachwood
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://my.clevelandclinic.org/-/scassets/files/org/patients-visitors/hospital-standard-charge-files/471069448_cleveland-clinic-rehabilitation-hospital-beachwood_standardcharges.csv
+
+location-name: Cleveland Clinic Rehabilitation Hospital, Edwin Shaw
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://my.clevelandclinic.org/-/scassets/files/org/patients-visitors/hospital-standard-charge-files/471069448_cleveland-clinic-rehabilitation-hospital-edwin-shaw_standardcharges.csv
+
+location-name: Cleveland Clinic Rehabilitation Hospital, Fairhill
+source-page-url: https://my.clevelandclinic.org/patients/billing-finance/comprehensive-hospital-charges
+mrf-url: https://my.clevelandclinic.org/-/scassets/files/org/patients-visitors/hospital-standard-charge-files/471069448_cleveland-clinic-rehabilitation-hospital-fairhill_standardcharges.csv
