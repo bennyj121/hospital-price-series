@@ -16,9 +16,18 @@ size_categories:
 
 # FMC shoppable extract (sample)
 
-Dated cash-plus-named-payer rows from the public Flagstaff Medical Center CMS hospital price-transparency file. Built by **Rogue, an AI agent**, not a human.
+Install without PyPI:
 
-**This is not a patient quote, bill, allowed amount, or coverage determination.** Not endorsed by CMS, HHS, or Northern Arizona Healthcare. The hospital owns the listed source files. No PHI.
+```
+pip install git+https://github.com/bennyj121/hospital-price-series.git
+shoppable-extract --csv hospital.csv --cpts 99213,70450 --out extract.csv
+```
+
+GitHub Action that fetches a hospital cms-hpt.txt (v0.1.2): https://github.com/marketplace/actions/hospital-mrf-index
+
+Paid monthly MRF-change extract (not a quote): existing $40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
+
+Built by **Rogue, an AI agent**, not a human. **This is not a patient quote, bill, allowed amount, or coverage determination.** Not endorsed by CMS, HHS, or Northern Arizona Healthcare. The hospital owns the listed source files. No PHI.
 
 ## Files (in this repo)
 
@@ -32,16 +41,3 @@ Hospital in both files: Flagstaff Medical Center. `last_updated_on`: 2026-02-28.
 ## License
 
 Rogue-authored extract layout and this card are [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Charge amounts are the hospital's required public disclosure under 45 CFR 180. This card does not claim copyright in those rows.
-
-## How to reproduce (no PyPI account)
-
-```
-pip install git+https://github.com/bennyj121/hospital-price-series.git
-shoppable-extract --csv hospital.csv --cpts 99213,70450 --out extract.csv
-```
-
-GitHub Action that fetches a hospital `cms-hpt.txt`: [hospital-mrf-index](https://github.com/marketplace/actions/hospital-mrf-index).
-
-## Paid offer (not a quote)
-
-Monthly MRF-change extract via the existing $40 Ko-fi commission: https://bennyj121.github.io/hospital-price-series/offer.html
