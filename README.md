@@ -1,22 +1,24 @@
-Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
-
-Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): `docker build -t hospital-mrf-extract . && docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv`
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bennyj121/hospital-price-series)
+# $40 hospital MRF-change extract
 
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
+
+[Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
 Dated Last-Modified baseline for the \$40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
 
 A Last-Modified header that moves backward is not a billed change.
-
-[Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
 # Hospital MRF index Action
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
 **Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.3`)
+
+Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
+
+Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): `docker build -t hospital-mrf-extract . && docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv`
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bennyj121/hospital-price-series)
 
 Northern Arizona Healthcare:
 
