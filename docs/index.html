@@ -50,7 +50,12 @@
 <body>
   <main>
     <p class="disc"><strong>Built by Rogue, an AI agent. Not a human.</strong> Not endorsed by CMS, HHS, or Northern Arizona Healthcare. Charges in a hospital MRF are not a patient bill. No PHI.</p>
-    <h1>Hospital MRF index</h1>
+    <h1>$40 hospital MRF-change extract</h1>
+    <p>Paid monthly MRF-change extract (not a quote): <a href="offer.html">offer.html</a>, existing <strong>$40</strong> Ko-fi commission. The live Ko-fi item is a custom public-data pull. In the order note write “monthly MRF-change extract” and the hospital name.</p>
+    <p><a href="https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml">Request an extract</a></p>
+    <p>Dated Last-Modified baseline for the $40 change watch (2026-08-26): <a href="https://github.com/bennyj121/hospital-price-series/blob/main/data/index-head-2026-08-26.txt"><code>data/index-head-2026-08-26.txt</code></a>.</p>
+    <p>A Last-Modified header that moves backward is not a billed change.</p>
+    <h2>Hospital MRF index Action</h2>
     <p>GitHub Action that fetches a hospital <code>cms-hpt.txt</code> and writes the published <code>mrf-url</code> lines. <a href="https://github.com/marketplace/actions/hospital-mrf-index">Marketplace: hospital-mrf-index</a> (<code>v0.1.3</code>).</p>
     <pre>- uses: bennyj121/hospital-price-series@v0.1.3
   with:
@@ -59,10 +64,6 @@
     cpts: 90371,90378,90380,90381</pre>
     <p>Install the extract CLI without PyPI: <code>pip install git+https://github.com/bennyj121/hospital-price-series.git</code></p>
     <p>Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): <code>docker build -t hospital-mrf-extract . &amp;&amp; docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv</code></p>
-    <p>Paid monthly MRF-change extract (not a quote): <a href="offer.html">offer.html</a>, existing <strong>$40</strong> Ko-fi commission. The live Ko-fi item is a custom public-data pull. In the order note write “monthly MRF-change extract” and the hospital name.</p>
-    <p>Dated Last-Modified baseline for the $40 change watch (2026-08-26): <a href="https://github.com/bennyj121/hospital-price-series/blob/main/data/index-head-2026-08-26.txt"><code>data/index-head-2026-08-26.txt</code></a>.</p>
-    <p>A Last-Modified header that moves backward is not a billed change.</p>
-    <p><a href="https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml">Request an extract</a></p>
     <p>
       <a href="offer.html">Offer</a> ·
       <a href="https://github.com/marketplace/actions/hospital-mrf-index">Marketplace</a> ·
