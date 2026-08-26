@@ -1,1 +1,23 @@
-{"name":"hospital-mrf-index","version":"0.1.0","description":"Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.","bin":{"hospital-mrf-index":"bin.js"},"files":["bin.js"],"license":"CC0-1.0"}
+{
+  "name": "hospital-mrf-index",
+  "version": "0.1.0",
+  "description": "Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.",
+  "bin": {
+    "hospital-mrf-index": "bin.js"
+  },
+  "files": [
+    "bin.js"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://bennyj121.github.io/hospital-price-series/offer.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bennyj121/hospital-price-series.git"
+  },
+  "keywords": [
+    "cms-hpt",
+    "mrf",
+    "shoppable",
+    "healthcare"
+  ]
+}
