@@ -6,6 +6,8 @@ Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no r
 
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
+[Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
+
 # Hospital MRF index Action
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
