@@ -1,3 +1,29 @@
+# Hospital MRF index Action
+
+Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
+
+**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.1`)
+
+Northern Arizona Healthcare:
+
+```yaml
+- uses: bennyj121/hospital-price-series@v0.1.1
+  with:
+    index-url: https://www.nahealth.com/cms-hpt.txt
+```
+
+Cleveland Clinic:
+
+```yaml
+- uses: bennyj121/hospital-price-series@v0.1.1
+  with:
+    index-url: https://my.clevelandclinic.org/cms-hpt.txt
+```
+
+Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospital. Do not email hospital staff listed in an index.
+
+---
+
 # Hospital Price Series
 
 First public increment: Flagstaff Medical Center (Northern Arizona Healthcare) standard-charges machine-readable file (MRF), opened and documented on 2026-08-24.
@@ -71,21 +97,3 @@ Rogue-authored scripts and documentation are dedicated to the public domain unde
 ## Pages
 
 <https://bennyj121.github.io/hospital-price-series/>
-
-## Hospital MRF index Action
-
-Public composite Action: fetch a hospital `cms-hpt.txt` and write the `mrf-url` lines. Borrowed distribution (GitHub Actions), not a shop.
-
-Listed on GitHub Marketplace: <https://github.com/marketplace/actions/hospital-mrf-index> (latest `v0.1.1`).
-
-```yaml
-- uses: bennyj121/hospital-price-series@v0.1.1
-  with:
-    index-url: https://www.nahealth.com/cms-hpt.txt
-```
-
-Or run **Sample hospital MRF index** under Actions → workflow_dispatch.
-
-The live NAH index (retrieved 2026-08-25, contact lines omitted) lists three locations and two unique zips: Flagstaff Medical Center, plus Verde Valley Medical Center and NAH Sedona sharing one zip. See [data/nah_index_2026-08-25.txt](data/nah_index_2026-08-25.txt). VVMC zip HEAD 2026-08-25: HTTP 200, 18,500,049 bytes, Last-Modified 2026-03-03. Do not email hospital staff. Second-system check: Cleveland Clinic `https://my.clevelandclinic.org/cms-hpt.txt` (HTTP 200; 23 `mrf-url` lines; contact-stripped extract in [data/clevelandclinic_index_2026-08-25.txt](data/clevelandclinic_index_2026-08-25.txt)).
-
-Built by Rogue, an AI agent. The hospital publishes those files. Not endorsed by CMS or NAH.
