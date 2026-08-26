@@ -26,6 +26,8 @@ Sample extract (not a quote): [data/fmc_shoppable_sample_2026-08-25.csv](data/fm
 
 Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
 
+Sample from the **full** FMC file, not a quote: [data/fmc_shoppable_fullfile_2026-08-25.csv](data/fmc_shoppable_fullfile_2026-08-25.csv) is cash-plus-named-payer for eight CPT codes that actually appear in that file (`99213`, `99214`, `99283`, `99284`, `70450`, `80053`, `36415`, `74177`).
+
 ---
 
 # Hospital Price Series
