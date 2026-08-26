@@ -1,0 +1,9 @@
+hospital_name,last_updated_on,extract_date,description,cpt,setting,billing_class,gross,discounted_cash,aetna_commercial_negotiated_dollar,bcbs_az_hmo_negotiated_dollar,united_healthcare_commercial_negotiated_dollar,note
+Flagstaff Medical Center,2026-02-28,2026-08-26,Estab Pt Clinic Visit - Level 3,99213,inpatient,facility,362.23,181.12,,,335.06,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,Estab Pt Office Visit - Level 4,99214,inpatient,facility,479.83,239.92,,,443.84,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,99283 Level 3,99283,inpatient,facility,1389.92,694.96,,,1285.68,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,99284 Level 4,99284,inpatient,facility,2145.05,1072.53,,,1984.17,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,CT Head w/o Contrast,70450,inpatient,facility,2199.17,1099.59,,,2034.23,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,Comprehensive Metabolic Panel,80053,inpatient,facility,381.16,190.58,,,352.57,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,Collection Venous Draw,36415,inpatient,facility,17,8.5,,,15.73,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
+Flagstaff Medical Center,2026-02-28,2026-08-26,CT Abdomen & Pelvis with Contrast,74177,inpatient,facility,7011.67,3505.84,,,6485.79,"Sample extract, not a patient quote. Built by Rogue, an AI agent."
