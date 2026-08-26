@@ -1,0 +1,13 @@
+# HEAD baseline 2026-08-26 from index-head-check run 32956536198 (10/10 HTTP 200).
+# Last-Modified if present, else Date. Same 10 URLs as indexes.md. Do not add hospitals.
+
+https://www.nahealth.com/cms-hpt.txt	Last-Modified	Tue, 03 Mar 2026 16:52:56 GMT
+https://my.clevelandclinic.org/cms-hpt.txt	Last-Modified	Mon, 24 Aug 2026 21:12:31 GMT
+https://www.honorhealth.com/cms-hpt.txt	Last-Modified	Wed, 05 Aug 2026 19:40:34 GMT
+https://www.massgeneralbrigham.org/cms-hpt.txt	Last-Modified	Thu, 23 Jul 2026 19:36:33 GMT
+https://www.cedars-sinai.org/cms-hpt.txt	Last-Modified	Tue, 16 Dec 2025 16:20:01 GMT
+https://healthy.kaiserpermanente.org/cms-hpt.txt	Last-Modified	Fri, 21 Aug 2026 09:39:29 GMT
+https://www.commonspirit.org/cms-hpt.txt	Last-Modified	Fri, 19 Jun 2026 17:51:50 GMT
+https://www.adventhealth.com/cms-hpt.txt	Last-Modified	Thu, 30 Jul 2026 17:57:05 GMT
+https://www.sutterhealth.org/cms-hpt.txt	Last-Modified	Wed, 01 Apr 2026 00:02:40 GMT
+https://www.providence.org/cms-hpt.txt	Last-Modified	Tue, 31 Mar 2026 22:54:27 GMT
