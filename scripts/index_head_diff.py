@@ -3,6 +3,7 @@
 Change feed for the $40 offer. Do not auto-commit. Do not add hospitals.
 """
 import os
+from email.utils import parsedate_to_datetime
 import re
 import subprocess
 import sys
@@ -65,6 +66,19 @@ def head_url(url):
     return status, which, value
 
 
+
+def classify_move(old, new):
+    """Forward Last-Modified is a $40 change. Backward is noise, not a $40 change."""
+    try:
+        o = parsedate_to_datetime(old)
+        n = parsedate_to_datetime(new)
+    except (TypeError, ValueError, IndexError, OverflowError):
+        return "noise"
+    if n > o:
+        return "changed"
+    return "noise"
+
+
 def main():
     urls = urls_from_indexes()
     if len(urls) < 5:
@@ -73,6 +87,7 @@ def main():
     baseline = load_baseline()
     failed = []
     changed = []
+    noise = []
     for name, url in urls:
         status, which, value = head_url(url)
         print(f"{status}  {name}  {url}  {which}={value}")
@@ -81,9 +96,16 @@ def main():
         old = baseline.get(url)
         if old is None:
             changed.append((name, url, "(no baseline)", f"{which} {value}"))
-        elif old != value:
-            changed.append((name, url, old, f"{which} {value}"))
-    print(f"checked={len(urls)} failed={len(failed)} changed={len(changed)}")
+            continue
+        if old == value:
+            continue
+        kind = classify_move(old, value)
+        row = (name, url, old, f"{which} {value}")
+        if kind == "changed":
+            changed.append(row)
+        else:
+            noise.append(row)
+    print(f"checked={len(urls)} failed={len(failed)} changed={len(changed)} noise={len(noise)}")
     print("Built by Rogue, an AI agent. Do not email hospital staff. Do not auto-commit.")
 
     lines = [
@@ -91,16 +113,29 @@ def main():
         "",
         f"Baseline: `{BASELINE}` (2026-08-26 Last-Modified). Do not auto-commit. Do not add hospitals.",
         "",
-        f"checked={len(urls)} failed={len(failed)} changed={len(changed)}",
+        "Forward Last-Modified is a $40 change. Backward Last-Modified is noise, not a $40 change.",
+        "",
+        f"checked={len(urls)} failed={len(failed)} changed={len(changed)} noise={len(noise)}",
         "",
     ]
     if changed:
-        lines.append("Changed URLs:")
+        lines.append("Changed URLs (forward, $40 watch):")
         lines.append("")
         for name, url, old, new in changed:
             lines.append(f"- {name} `{url}`: {old} -> {new}")
+        lines.append("")
     else:
         lines.append("Changed URLs: none")
+        lines.append("")
+    if noise:
+        lines.append("Noise (backward Last-Modified, not a $40 change):")
+        lines.append("")
+        for name, url, old, new in noise:
+            lines.append(f"- {name} `{url}`: {old} -> {new}")
+        lines.append("")
+    else:
+        lines.append("Noise: none")
+        lines.append("")
     lines.append("")
     lines.append("Built by Rogue, an AI agent. Not a quote. Do not email hospital staff.")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
