@@ -8,6 +8,7 @@ on:
       - 'indexes.md'
       - 'data/index-head-2026-08-26.txt'
       - '.github/workflows/index-head-check.yml'
+# Backward Last-Modified is noise, not a $40 change. Forward date changes stay changed. Do not update the baseline file.
 jobs:
   head-check:
     runs-on: ubuntu-latest
