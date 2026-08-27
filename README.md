@@ -1,5 +1,7 @@
 # $40 hospital MRF-change extract
 
+The free GitHub Action is `hospital-mrf-index`: https://github.com/marketplace/actions/hospital-mrf-index.
+
 Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
 
 [Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
