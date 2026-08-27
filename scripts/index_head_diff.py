@@ -144,6 +144,15 @@ def main():
     else:
         print("--- summary ---")
         print("\n".join(lines))
+
+    # Machine-readable feed for own-repo mrf-change issues (CI only).
+    import json
+    payload = [
+        {"name": name, "url": url, "old": old, "new": new}
+        for name, url, old, new in changed
+    ]
+    Path("changed.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote changed.json count={len(payload)}")
     return 1 if failed else 0
 
 

@@ -8,7 +8,11 @@ on:
       - 'indexes.md'
       - 'data/index-head-2026-08-26.txt'
       - '.github/workflows/index-head-check.yml'
+      - 'scripts/index_head_diff.py'
 # Backward Last-Modified is noise, not a $40 change. Forward date changes stay changed. Do not update the baseline file.
+permissions:
+  contents: read
+  issues: write
 jobs:
   head-check:
     runs-on: ubuntu-latest
@@ -20,3 +24,82 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/index_head_diff.py
+      - name: Open mrf-change issues for forward Last-Modified
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          from pathlib import Path
+
+          path = Path("changed.json")
+          if not path.exists():
+              print("no changed.json")
+              sys.exit(0)
+          rows = json.loads(path.read_text(encoding="utf-8"))
+          if not rows:
+              print("changed=0; no issues")
+              sys.exit(0)
+
+          def run(cmd):
+              return subprocess.run(cmd, capture_output=True, text=True, check=False)
+
+          for row in rows:
+              name = row["name"]
+              url = row["url"]
+              old = row["old"]
+              new = row["new"]
+              title = f"mrf-change: {name}"
+              # Skip if an open issue with this title already exists
+              q = run([
+                  "gh", "issue", "list",
+                  "--repo", os.environ["GITHUB_REPOSITORY"],
+                  "--state", "open",
+                  "--search", f'in:title "{title}"',
+                  "--json", "number,title",
+              ])
+              if q.returncode != 0:
+                  print(q.stderr, file=sys.stderr)
+                  sys.exit(q.returncode)
+              existing = json.loads(q.stdout or "[]")
+              if any(i.get("title") == title for i in existing):
+                  print(f"skip existing open issue: {title}")
+                  continue
+              body = "\n".join([
+                  f"Forward Last-Modified on `{url}`.",
+                  "",
+                  f"- Was: `{old}`",
+                  f"- Now: `{new}`",
+                  "",
+                  "This is a public $40 change-watch signal (not a patient quote).",
+                  "Order a monthly MRF-change extract: https://bennyj121.github.io/hospital-price-series/offer.html",
+                  "Issue form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml",
+                  "",
+                  "Built by Rogue, an AI agent. Do not email hospital staff.",
+              ])
+              body_path = Path("issue-body.md")
+              body_path.write_text(body + "\n", encoding="utf-8")
+              c = run([
+                  "gh", "issue", "create",
+                  "--repo", os.environ["GITHUB_REPOSITORY"],
+                  "--title", title,
+                  "--body-file", str(body_path),
+                  "--label", "mrf-change",
+              ])
+              if c.returncode != 0:
+                  # Label may be missing on first run — create without label
+                  print(c.stderr, file=sys.stderr)
+                  c2 = run([
+                      "gh", "issue", "create",
+                      "--repo", os.environ["GITHUB_REPOSITORY"],
+                      "--title", title,
+                      "--body-file", str(body_path),
+                  ])
+                  if c2.returncode != 0:
+                      print(c2.stderr, file=sys.stderr)
+                      sys.exit(c2.returncode)
+                  print(c2.stdout.strip())
+              else:
+                  print(c.stdout.strip())
+          PY

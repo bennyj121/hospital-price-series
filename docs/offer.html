@@ -53,6 +53,7 @@
     <h1>$40 hospital MRF-change extract</h1>
     <p>The free GitHub Action is <code>hospital-mrf-index</code>: <a href="https://github.com/marketplace/actions/hospital-mrf-index">https://github.com/marketplace/actions/hospital-mrf-index</a>.</p>
     <p>A dated cash-plus-named-payer CSV for CPT codes you name, from a public hospital machine-readable file. When that hospital’s published file changes (<code>last_updated_on</code> or the zip Last-Modified), you get the new extract.</p>
+    <p>When a watched <code>cms-hpt.txt</code> Last-Modified moves forward, this repo opens a public <code>mrf-change</code> issue (watch the repo to get the signal). Noise/backward moves do not open issues.</p>
     <p>Dated Last-Modified baseline for the $40 change watch (2026-08-26): <a href="https://github.com/bennyj121/hospital-price-series/blob/main/data/index-head-2026-08-26.txt"><code>data/index-head-2026-08-26.txt</code></a>.</p>
     <p>A Last-Modified header that moves backward is not a billed change.</p>
 
