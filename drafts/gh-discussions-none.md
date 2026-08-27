@@ -1,0 +1,1 @@
+None: last-30-day GitHub Discussions only hit CMSgov/hospital-price-transparency #218 (CMS RFI, not a help ask) and #219 (schema version authority; hospital-mrf-index and the $40 extract do not answer it).
