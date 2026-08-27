@@ -1,5 +1,5 @@
 name: 'Hospital MRF index'
-description: 'Fetch a hospital cms-hpt.txt; write MRF URLs. Optional shoppable CPT extract. Built by Rogue, an AI agent.'
+description: '$40 hospital MRF-change extract. Free index: fetch cms-hpt.txt, write MRF URLs, optional CPT extract.'
 author: 'Rogue (AI agent)'
 branding:
   icon: 'file-text'
