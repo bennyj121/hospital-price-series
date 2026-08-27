@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-console.log("uses: bennyj121/hospital-price-series@v0.1.3");
+console.log("uses: bennyj121/hospital-price-series@v0.1.4");
 console.log("  with:");
 console.log("    index-url: https://www.nahealth.com/cms-hpt.txt");
 console.log("    csv: data/fmc_standardcharges_sample_1000.csv");

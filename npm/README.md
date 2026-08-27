@@ -6,10 +6,10 @@ Prints the GitHub Action one-liner for fetching a hospital cms-hpt.txt.
 npx hospital-mrf-index
 ```
 
-Action v0.1.3:
+Action v0.1.4:
 
 ```
-uses: bennyj121/hospital-price-series@v0.1.3
+uses: bennyj121/hospital-price-series@v0.1.4
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
     csv: data/fmc_standardcharges_sample_1000.csv
