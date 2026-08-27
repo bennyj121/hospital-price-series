@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch cms-hpt.txt
         id: index
-        uses: bennyj121/hospital-price-series@v0.1.4
+        uses: bennyj121/hospital-price-series@v0.1.5
         with:
           index-url: ${{ github.event.inputs.index-url || 'https://www.nahealth.com/cms-hpt.txt' }}
       - name: Upload index artifacts

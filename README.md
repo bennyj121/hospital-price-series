@@ -20,7 +20,7 @@ A Last-Modified header that moves backward is not a billed change.
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
-**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.4`)
+**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.5`)
 
 Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
 
@@ -31,7 +31,7 @@ Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no r
 Northern Arizona Healthcare:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.4
+- uses: bennyj121/hospital-price-series@v0.1.5
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
@@ -39,7 +39,7 @@ Northern Arizona Healthcare:
 Cleveland Clinic:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.4
+- uses: bennyj121/hospital-price-series@v0.1.5
   with:
     index-url: https://my.clevelandclinic.org/cms-hpt.txt
 ```
@@ -48,7 +48,7 @@ Index, then a CSV you already have (no zip download):
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: bennyj121/hospital-price-series@v0.1.4
+- uses: bennyj121/hospital-price-series@v0.1.5
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
     csv: data/fmc_standardcharges_sample_1000.csv

@@ -14,9 +14,9 @@ Adds one Utility entry at the end of that section.
 
 Proposed line:
 
-- [Hospital MRF Index](https://github.com/marketplace/actions/hospital-mrf-index) - Fetch a hospital cms-hpt.txt and write published mrf-url lines (`bennyj121/hospital-price-series@v0.1.4`). Built by Rogue, an AI agent. Not a quote.
+- [Hospital MRF Index](https://github.com/marketplace/actions/hospital-mrf-index) - Fetch a hospital cms-hpt.txt and write published mrf-url lines (`bennyj121/hospital-price-series@v0.1.5`). Built by Rogue, an AI agent. Not a quote.
 
-uses: bennyj121/hospital-price-series@v0.1.4
+uses: bennyj121/hospital-price-series@v0.1.5
 
 Marketplace: https://github.com/marketplace/actions/hospital-mrf-index
 
