@@ -19,6 +19,7 @@ size_categories:
 Install without PyPI:
 
 ```
+pip install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/shoppable_extract-0.1.6-py3-none-any.whl
 pip install git+https://github.com/bennyj121/hospital-price-series.git
 shoppable-extract --csv hospital.csv --cpts 99213,70450 --out extract.csv
 ```
