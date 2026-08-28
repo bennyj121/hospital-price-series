@@ -63,7 +63,7 @@ Index, then a CSV you already have (no zip download):
 
 Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospital. Do not email hospital staff listed in an index.
 
-Sample extract (not a quote): [data/fmc_shoppable_sample_2026-08-25.csv](data/fmc_shoppable_sample_2026-08-25.csv) is a dated cash-plus-named-payer slice of the four CPT codes that actually appear in the 1,000-row FMC sample (`90371`, `90378`, `90380`, `90381`).
+Sample extract (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-change/) is a SAMPLE of the $40 MRF-change extract ([fmc-mrf-change-sample.csv](examples/sample-mrf-change/fmc-mrf-change-sample.csv), [changes.csv](examples/sample-mrf-change/changes.csv)). Not a quote.
 
 Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
 
