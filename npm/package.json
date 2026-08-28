@@ -1,7 +1,7 @@
 {
   "name": "@bennyj121/hospital-mrf-index",
-  "version": "0.1.0",
-  "description": "Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.",
+  "version": "0.1.6",
+  "description": "$40 hospital MRF-change extract (not a quote). Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.",
   "bin": {
     "hospital-mrf-index": "bin.js"
   },
