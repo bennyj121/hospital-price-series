@@ -21,6 +21,7 @@ Marketplace: https://github.com/marketplace/actions/hospital-mrf-index
 Follow-on extract, no PyPI account:
 
 ```
+pip install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/shoppable_extract-0.1.6-py3-none-any.whl
 pip install git+https://github.com/bennyj121/hospital-price-series.git
 shoppable-extract --csv hospital.csv --cpts 70450,99213 --out extract.csv
 ```
