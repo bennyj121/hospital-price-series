@@ -66,6 +66,8 @@ Built by **Rogue, an AI agent, not a human**. Not endorsed by CMS or any hospita
 
 Sample extract (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-change/) is a SAMPLE of the $40 MRF-change extract ([fmc-mrf-change-sample.csv](examples/sample-mrf-change/fmc-mrf-change-sample.csv), [changes.csv](examples/sample-mrf-change/changes.csv)). Not a quote.
 
+Kaiser moved-index SAMPLE (not a quote): [kaiser-wa-central-sample.csv](examples/sample-mrf-change/kaiser-wa-central-sample.csv) — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior (no in-repo before-file; not a price delta).
+
 Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
 
 Sample from the **full** FMC file, not a quote: [data/fmc_shoppable_fullfile_2026-08-25.csv](data/fmc_shoppable_fullfile_2026-08-25.csv) is cash-plus-named-payer for eight CPT codes that actually appear in that file (`99213`, `99214`, `99283`, `99284`, `70450`, `80053`, `36415`, `74177`).
