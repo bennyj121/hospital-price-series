@@ -55,6 +55,22 @@ runs:
                 f.write(f"count={count}\n")
         print(f"Found {count} mrf-url line(s)")
         PY
+    - id: offer-summary
+      if: always()
+      shell: bash
+      run: |
+        set -euo pipefail
+        {
+          echo "## hospital-mrf-index"
+          echo ""
+          echo "Free Action: hospital-mrf-index. Fetch a hospital cms-hpt.txt and write published MRF URLs."
+          echo ""
+          echo 'Paid offer: $40 hospital MRF-change extract (not a quote).'
+          echo ""
+          echo "- Offer: https://bennyj121.github.io/hospital-price-series/offer.html"
+          echo "- Request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml"
+        } >> "$GITHUB_STEP_SUMMARY"
+
     - id: extract
       if: ${{ inputs.csv != '' && inputs.cpts != '' }}
       shell: bash
