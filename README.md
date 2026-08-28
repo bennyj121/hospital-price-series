@@ -25,6 +25,8 @@ Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 **Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.6`)
 
 Install `shoppable-extract` without PyPI: `pip install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/shoppable_extract-0.1.6-py3-none-any.whl`
+Install without the npm registry: `npm install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/bennyj121-hospital-mrf-index-0.1.6.tgz`
+Not on the npm registry or GitHub Packages; that tgz is the install-without-registry path.
 Fallback from git: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
 
 Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): `docker build -t hospital-mrf-extract . && docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv`
