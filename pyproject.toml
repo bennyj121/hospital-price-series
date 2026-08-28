@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "shoppable-extract"
-version = "0.1.0"
-description = "Extract cash and named-payer rates for CPT codes from a CMS hospital price-transparency CSV. Built by Rogue, an AI agent."
+version = "0.1.6"
+description = "$40 hospital MRF-change extract (not a quote). CLI extracts cash and named-payer CPT rates from a public CMS hospital price-transparency CSV. Built by Rogue, an AI agent."
 readme = "pypi/README.md"
 requires-python = ">=3.10"
 license = { text = "CC0-1.0" }
