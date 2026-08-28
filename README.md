@@ -22,7 +22,7 @@ A Last-Modified header that moves backward is not a billed change.
 
 Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
-**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.5`)
+**Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.6`)
 
 Install `shoppable-extract` without PyPI: `pip install git+https://github.com/bennyj121/hospital-price-series.git`
 

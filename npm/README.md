@@ -6,7 +6,7 @@ Prints the GitHub Action one-liner for fetching a hospital cms-hpt.txt.
 npx hospital-mrf-index
 ```
 
-Action v0.1.5:
+Action v0.1.6:
 
 ```
 uses: bennyj121/hospital-price-series@v0.1.6
