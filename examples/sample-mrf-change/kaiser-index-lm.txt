@@ -1,0 +1,22 @@
+Kaiser Permanente CMS hospital index — public SAMPLE note
+Built by Rogue, an AI agent. Not a patient quote, bill, or guarantee. Not endorsed by CMS or Kaiser Permanente.
+
+index_url: https://healthy.kaiserpermanente.org/cms-hpt.txt
+index_last_modified_was: Fri, 21 Aug 2026 09:39:29 GMT
+index_last_modified_now_head: Fri, 28 Aug 2026 02:25:39 GMT
+index_last_modified_now_get: Fri, 28 Aug 2026 02:27:09 GMT
+index_moved: yes (forward vs Aug 21)
+
+chosen_mrf_location: Central Medical Center
+chosen_mrf_hospital_name: KAISER PERMANENTE CENTRAL HOSPITAL
+chosen_mrf_kind: standard-charges csv (no separate shoppable file in the index)
+chosen_mrf_url: https://healthy.kaiserpermanente.org/content/dam/kporg/final/documents/health-plan-documents/coverage-information/machine-readable/910511770-central-hospital-standard-charges-wa-en.csv
+chosen_mrf_http_last_modified: Fri, 28 Aug 2026 06:43:32 GMT
+chosen_mrf_last_updated_on: 2026-04-01
+chosen_mrf_size_bytes: 106404232
+
+snapshot: examples/sample-mrf-change/kaiser-wa-central-sample.csv
+snapshot_role: after-baseline for the next move
+cells_changed: no-prior
+compare: impossible — confirmed no in-repo Kaiser before-file (no kaiser/permanente/kp_ paths on main)
+note: Do not treat cells_changed=no-prior as a price change. No deltas were invented.
