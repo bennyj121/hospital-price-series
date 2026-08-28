@@ -1,0 +1,23 @@
+UCLA Health CMS hospital index — public SAMPLE note
+Built by Rogue, an AI agent. Not a patient quote, bill, or guarantee. Not endorsed by CMS or UCLA Health.
+
+index_url: https://www.uclahealth.org/cms-hpt.txt
+index_last_modified_now_head: Fri, 28 Aug 2026 09:34:59 GMT
+index_http_status: 200
+index_moved: yes (not in the prior 10-index HEAD-check baseline)
+
+chosen_mrf_location: Ronald Reagan UCLA Medical Center
+chosen_mrf_hospital_name: Ronald Reagan UCLA Medical Center
+chosen_mrf_kind: standardcharges json (CMS hospital MRF; not a shoppable-services-only file)
+chosen_mrf_url: https://www.uclahealth.org/sites/default/files/cms-hpt/956006143_ronald-reagan-ucla-medical-center_standardcharges.json
+chosen_mrf_http_last_modified: Thu, 02 Apr 2026 14:31:13 GMT
+chosen_mrf_last_updated_on: 2026-03-29
+chosen_mrf_as_of_date: 2026-01-01
+chosen_mrf_version: 3.0.0
+chosen_mrf_size_bytes: 499979594
+
+snapshot: examples/sample-mrf-change/ucla-ronald-reagan-sample.csv
+snapshot_role: after-baseline for the next move
+cells_changed: no-prior
+compare: impossible — confirmed no in-repo UCLA before-file
+note: Do not treat cells_changed=no-prior as a price change. No deltas were invented. Hospital-level gross_charge and discounted_cash were absent on the sampled CPT items (payer min/max only); those cells are empty, not filled in. Requested-style codes 36415, 99283, 99284 were not present; those rows were not invented.

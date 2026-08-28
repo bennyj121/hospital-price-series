@@ -11,3 +11,4 @@ https://www.commonspirit.org/cms-hpt.txt	Last-Modified	Fri, 19 Jun 2026 17:51:50
 https://www.adventhealth.com/cms-hpt.txt	Last-Modified	Thu, 30 Jul 2026 17:57:05 GMT
 https://www.sutterhealth.org/cms-hpt.txt	Last-Modified	Wed, 01 Apr 2026 00:02:40 GMT
 https://www.providence.org/cms-hpt.txt	Last-Modified	Tue, 31 Mar 2026 22:54:27 GMT
+https://www.uclahealth.org/cms-hpt.txt	Last-Modified	Fri, 28 Aug 2026 09:34:59 GMT
