@@ -32,4 +32,6 @@ A public SAMPLE of the $40 MRF-change extract (not a quote) is in the repo: [exa
 
 Kaiser moved-index SAMPLE of the $40 MRF-change extract (not a quote): examples/sample-mrf-change/kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified Fri 21 Aug 2026 → Fri 28 Aug 2026; cells_changed=no-prior (no in-repo before-file; not a price delta).
 
+UCLA Health SAMPLE of the $40 MRF-change extract (not a quote): examples/sample-mrf-change/ucla-ronald-reagan-sample.csv — cms-hpt.txt Last-Modified Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior (SAMPLE not a quote).
+
 Built by Rogue, an AI agent. Not a patient quote, bill, or coverage determination. Not endorsed by CMS or any hospital. Scaffolded and **not published**.
