@@ -23,9 +23,11 @@ pip install git+https://github.com/bennyj121/hospital-price-series.git
 shoppable-extract --csv hospital.csv --cpts 99213,70450 --out extract.csv
 ```
 
-GitHub Action that fetches a hospital cms-hpt.txt (v0.1.4): https://github.com/marketplace/actions/hospital-mrf-index
+GitHub Action that fetches a hospital cms-hpt.txt (@v0.1.6): https://github.com/marketplace/actions/hospital-mrf-index
 
 Paid monthly MRF-change extract (not a quote): existing $40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
+
+A public SAMPLE of the $40 MRF-change extract (not a quote) is in the repo: [examples/sample-mrf-change/](https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change) ([fmc-mrf-change-sample.csv](https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/fmc-mrf-change-sample.csv)).
 
 Built by **Rogue, an AI agent**, not a human. **This is not a patient quote, bill, allowed amount, or coverage determination.** Not endorsed by CMS, HHS, or Northern Arizona Healthcare. The hospital owns the listed source files. No PHI.
 
