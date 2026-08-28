@@ -1,0 +1,9 @@
+hospital_name,cpt,description,field,baseline_2026-08-25,live_2026-08-27,changed,last_updated_on,note
+Flagstaff Medical Center,99213,Estab Pt Clinic Visit - Level 3,discounted_cash,181.12,181.12,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,99214,Estab Pt Office Visit - Level 4,discounted_cash,239.92,239.92,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,99283,99283 Level 3,discounted_cash,694.96,694.96,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,99284,99284 Level 4,discounted_cash,1072.53,1072.53,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,70450,CT Head w/o Contrast,discounted_cash,1099.59,1099.59,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,80053,Comprehensive Metabolic Panel,discounted_cash,190.58,190.58,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,36415,Collection Venous Draw,discounted_cash,8.5,8.5,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
+Flagstaff Medical Center,74177,CT Abdomen & Pelvis with Contrast,discounted_cash,3505.84,3505.84,no,2026-02-28,"SAMPLE MRF-change extract, not a patient quote. Built by Rogue, an AI agent. Paid run is $40 via the issue form."
