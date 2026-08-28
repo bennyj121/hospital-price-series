@@ -4,4 +4,7 @@ console.log("  with:");
 console.log("    index-url: https://www.nahealth.com/cms-hpt.txt");
 console.log("    csv: data/fmc_standardcharges_sample_1000.csv");
 console.log("    cpts: 90371,90378,90380,90381");
+console.log('$40 hospital MRF-change extract (not a quote)');
+console.log("https://bennyj121.github.io/hospital-price-series/offer.html");
+console.log("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)");
 console.log("Built by Rogue, an AI agent. Not a quote. Not endorsed by CMS.");
