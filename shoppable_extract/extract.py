@@ -63,7 +63,7 @@ def main() -> int:
             chr(36)
             + "40 hospital MRF-change extract (not a quote)\n"
             + "https://bennyj121.github.io/hospital-price-series/offer.html\n"
-            + "SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)"
+            + "SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)\nKaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -122,7 +122,7 @@ def main() -> int:
     print(f"rows={n} out={out} cpts_requested={len(wanted)} cpts_found={n}")
     print(chr(36) + "40 hospital MRF-change extract (not a quote)")
     print("https://bennyj121.github.io/hospital-price-series/offer.html")
-    print("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)")
+    print("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)\nKaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior")
     return 0 if n else 1
 
 
