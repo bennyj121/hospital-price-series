@@ -15,7 +15,7 @@ Adds one In-Container Tooling entry (alphabetically after GoSu).
 
 Proposed line:
 
-- [hospital-mrf-extract](https://github.com/bennyj121/hospital-price-series) - Build a local 129MB CLI image (COPY pyproject.toml + shoppable_extract, no git) that extracts cash and named-payer CPT rates from a CMS hospital CSV. $40 hospital MRF-change extract (not a quote); SAMPLE at examples/sample-mrf-change/. Local-only / no GHCR yet.
+- [hospital-mrf-extract](https://github.com/bennyj121/hospital-price-series) - Build a local 129MB CLI image (COPY pyproject.toml + shoppable_extract, no git) that extracts cash and named-payer CPT rates from a CMS hospital CSV. $40 hospital MRF-change extract (not a quote); SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv). Local-only / no GHCR yet.
 
 Repo: https://github.com/bennyj121/hospital-price-series
 Dockerfile: https://github.com/bennyj121/hospital-price-series/blob/main/Dockerfile
