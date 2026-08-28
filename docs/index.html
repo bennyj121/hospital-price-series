@@ -92,6 +92,8 @@
     csv: data/fmc_standardcharges_sample_1000.csv
     cpts: 90371,90378,90380,90381</pre>
     <p>Install the extract CLI without PyPI: <code>pip install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/shoppable_extract-0.1.6-py3-none-any.whl</code></p>
+    <p>Install without the npm registry: <code>npm install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/bennyj121-hospital-mrf-index-0.1.6.tgz</code></p>
+    <p>Not on npmjs.com or GitHub Packages; that tgz is the install-without-registry path.</p>
     <p>Fallback from git: <code>pip install git+https://github.com/bennyj121/hospital-price-series.git</code></p>
     <p>Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no registry): <code>docker build -t hospital-mrf-extract . &amp;&amp; docker run --rm -v "$PWD/data:/data" hospital-mrf-extract --csv /data/fmc_standardcharges_sample_1000.csv --cpts 90371,90378,90380,90381 --out /data/shoppable_extract.csv</code></p>
     <p>
