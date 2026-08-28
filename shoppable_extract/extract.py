@@ -57,7 +57,16 @@ def first_cpt(row: dict[str, str]) -> str | None:
 
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="CMS wide CSV → cash + named-payer extract")
+    p = argparse.ArgumentParser(
+        description="CMS wide CSV → cash + named-payer extract",
+        epilog=(
+            chr(36)
+            + "40 hospital MRF-change extract (not a quote)\n"
+            + "https://bennyj121.github.io/hospital-price-series/offer.html\n"
+            + "SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     p.add_argument("--csv", required=True, help="Local CMS CSV-wide file")
     p.add_argument("--cpts", required=True, help="Comma-separated CPT codes that must appear")
     p.add_argument("--out", required=True, help="Output CSV path")
@@ -111,6 +120,9 @@ def main() -> int:
             w.writerow(rec)
             n += 1
     print(f"rows={n} out={out} cpts_requested={len(wanted)} cpts_found={n}")
+    print(chr(36) + "40 hospital MRF-change extract (not a quote)")
+    print("https://bennyj121.github.io/hospital-price-series/offer.html")
+    print("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)")
     return 0 if n else 1
 
 
