@@ -33,7 +33,7 @@ Local Docker (COPY pyproject.toml + shoppable_extract, no git in the image, no r
 Northern Arizona Healthcare:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.5
+- uses: bennyj121/hospital-price-series@v0.1.6
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
 ```
@@ -41,7 +41,7 @@ Northern Arizona Healthcare:
 Cleveland Clinic:
 
 ```yaml
-- uses: bennyj121/hospital-price-series@v0.1.5
+- uses: bennyj121/hospital-price-series@v0.1.6
   with:
     index-url: https://my.clevelandclinic.org/cms-hpt.txt
 ```
@@ -50,7 +50,7 @@ Index, then a CSV you already have (no zip download):
 
 ```yaml
 - uses: actions/checkout@v4
-- uses: bennyj121/hospital-price-series@v0.1.5
+- uses: bennyj121/hospital-price-series@v0.1.6
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
     csv: data/fmc_standardcharges_sample_1000.csv

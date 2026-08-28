@@ -9,7 +9,7 @@ npx hospital-mrf-index
 Action v0.1.5:
 
 ```
-uses: bennyj121/hospital-price-series@v0.1.5
+uses: bennyj121/hospital-price-series@v0.1.6
   with:
     index-url: https://www.nahealth.com/cms-hpt.txt
     csv: data/fmc_standardcharges_sample_1000.csv
