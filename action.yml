@@ -63,12 +63,13 @@ runs:
         {
           echo "## hospital-mrf-index"
           echo ""
-          echo "Free Action: hospital-mrf-index. Fetch a hospital cms-hpt.txt and write published MRF URLs."
+          echo 'Paid: $40 hospital MRF-change extract (not a quote) — https://bennyj121.github.io/hospital-price-series/offer.html'
           echo ""
-          echo 'Paid offer: $40 hospital MRF-change extract (not a quote).'
-          echo ""
-          echo "- Offer: https://bennyj121.github.io/hospital-price-series/offer.html"
           echo "- Request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml"
+          echo "- SAMPLE (not a quote): FMC https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/fmc-mrf-change-sample.csv"
+          echo "- Kaiser moved-index SAMPLE (21 Aug → 28 Aug 2026, cells_changed=no-prior): https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/kaiser-wa-central-sample.csv"
+          echo ""
+          echo "Free Action: hospital-mrf-index fetches cms-hpt.txt and writes MRF URLs."
         } >> "$GITHUB_STEP_SUMMARY"
 
     - id: extract
