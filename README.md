@@ -24,6 +24,10 @@ Fetch a hospital `cms-hpt.txt` and write the published `mrf-url` lines.
 
 **Marketplace:** <https://github.com/marketplace/actions/hospital-mrf-index> (`v0.1.6`)
 
+Sister free Actions:
+- Validate a `cms-hpt.txt` and HEAD-check each `mrf-url`: [`cms-hpt-validate@v0.1.0`](https://github.com/bennyj121/cms-hpt-validate)
+- Run the official CMS HPT CLI on an MRF: [`hpt-validator-action@v0.1.0`](https://github.com/bennyj121/hpt-validator-action)
+
 Install `shoppable-extract` without PyPI: `pip install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/shoppable_extract-0.1.6-py3-none-any.whl`
 Install without the npm registry: `npm install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/bennyj121-hospital-mrf-index-0.1.6.tgz`
 Not on the npm registry or GitHub Packages; that tgz is the install-without-registry path.
