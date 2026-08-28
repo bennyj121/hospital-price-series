@@ -3,8 +3,10 @@
 Prints the GitHub Action one-liner for fetching a hospital cms-hpt.txt.
 
 ```
-npx hospital-mrf-index
+npm install https://github.com/bennyj121/hospital-price-series/releases/download/v0.1.6/bennyj121-hospital-mrf-index-0.1.6.tgz
 ```
+
+Not on the npm registry or GitHub Packages. Install without a registry from that v0.1.6 release tgz.
 
 Action v0.1.6:
 
