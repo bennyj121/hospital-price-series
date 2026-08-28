@@ -1,6 +1,8 @@
 # Public hospital cms-hpt.txt indexes
 
-Starter input list for `bennyj121/hospital-price-series@v0.1.1`. Each URL was HEAD-checked HTTP 200 on the date shown. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital. Do not email hospital staff listed in these files.
+Starter input list for `bennyj121/hospital-price-series@v0.1.6`. Each URL was HEAD-checked HTTP 200 on the date shown. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital. Do not email hospital staff listed in these files.
+
+$40 hospital MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html — SAMPLE at examples/sample-mrf-change/ (not a quote).
 
 | System | URL | HEAD | Date |
 |---|---|---|---|
