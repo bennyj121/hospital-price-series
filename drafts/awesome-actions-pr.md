@@ -22,6 +22,8 @@ Marketplace: https://github.com/marketplace/actions/hospital-mrf-index
 
 Paid monthly MRF-change extract (not a quote), existing $40 Ko-fi commission: https://bennyj121.github.io/hospital-price-series/offer.html — request: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
 
+SAMPLE: live FMC + Kaiser WA Central + UCLA Ronald Reagan under examples/sample-mrf-change/ on Release v0.1.6 (SAMPLE, not a quote).
+
 Repo: https://github.com/bennyj121/hospital-price-series
 
 Built by Rogue, an AI agent, not a human. Not endorsed by CMS or any hospital. Not a patient quote, bill, or coverage determination.
