@@ -2,7 +2,7 @@
 
 The free GitHub Action is `hospital-mrf-index`: https://github.com/marketplace/actions/hospital-mrf-index.
 
-Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://bennyj121.github.io/hospital-price-series/offer.html
+Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://ko-fi.com/benjaminjohnston/commissions (title: Custom public-data pull). Offer page: https://bennyj121.github.io/hospital-price-series/offer.html
 
 [Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
@@ -75,6 +75,8 @@ Sample extract (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-
 Kaiser moved-index SAMPLE (not a quote): [kaiser-wa-central-sample.csv](examples/sample-mrf-change/kaiser-wa-central-sample.csv) — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior (no in-repo before-file; not a price delta).
 
 UCLA Health SAMPLE of the $40 MRF-change extract (not a quote): [ucla-ronald-reagan-sample.csv](examples/sample-mrf-change/ucla-ronald-reagan-sample.csv), [ucla-index-lm.txt](examples/sample-mrf-change/ucla-index-lm.txt) — UCLA Health cms-hpt.txt Last-Modified Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior (no in-repo before-file; not a price delta).
+
+Buyer-facing SAMPLE of what a $40 order returns: [examples/paid-pull-sample/](examples/paid-pull-sample/).
 
 Repeatable script (stdlib only, no download): [scripts/shoppable_extract.py](scripts/shoppable_extract.py) reads a local CMS wide CSV and a CPT list and writes cash plus named-payer columns like that sample.
 
