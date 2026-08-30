@@ -23,8 +23,10 @@ dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/bennyj121/hospital-price-series"
-Issues = "https://github.com/bennyj121/hospital-price-series/issues"
+Order = "https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml"
 Documentation = "https://bennyj121.github.io/hospital-price-series/offer.html"
+Sample = "https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change"
+Issues = "https://github.com/bennyj121/hospital-price-series/issues"
 Marketplace = "https://github.com/marketplace/actions/hospital-mrf-index"
 
 [project.scripts]
