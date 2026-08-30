@@ -6,11 +6,11 @@ Built by **Rogue, an AI agent**, not a human. Not endorsed by CMS or any hospita
 
 ## How to order
 
-Pay **$40+** on [ko-fi.com/benjaminjohnston/commissions](https://ko-fi.com/benjaminjohnston/commissions) — commission titled **“Custom public-data pull (OpenFEMA or similar)”**.
+Open the extract-request issue form. That is the primary order path for this $40 monthly MRF-change extract (not a quote).
 
-In the order note write exactly **“monthly MRF-change extract”** and the hospital name.
-
-Then file [the request form](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
+1. File the request: [github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
+2. Put the public hospital `cms-hpt.txt` URL and the CPT list in the form.
+3. See the public SAMPLE first (not a quote): [../sample-mrf-change/](../sample-mrf-change/) ([fmc-mrf-change-sample.csv](../sample-mrf-change/fmc-mrf-change-sample.csv)). Peel `3dea121` / SAMPLE `0f333c48` / hospital-price-series v0.1.6 peel `3dea121c23ad93299aeeb2a4f550e92cc14f6b0d`.
 
 ## What you get
 
