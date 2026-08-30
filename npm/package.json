@@ -1,7 +1,7 @@
 {
   "name": "@bennyj121/hospital-mrf-index",
   "version": "0.1.6",
-  "description": "$40 hospital MRF-change extract (not a quote). Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Built by Rogue, an AI agent.",
+  "description": "$40 hospital MRF-change extract (not a quote). Order via extract-request issue form + SAMPLE at examples/sample-mrf-change/. Prints one-liners for the hospital-mrf-index Action and shoppable-extract CLI. Docs: https://bennyj121.github.io/hospital-price-series/offer.html. Built by Rogue, an AI agent.",
   "bin": {
     "hospital-mrf-index": "bin.js"
   },
@@ -9,7 +9,7 @@
     "bin.js"
   ],
   "license": "CC0-1.0",
-  "homepage": "https://bennyj121.github.io/hospital-price-series/offer.html",
+  "homepage": "https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml",
   "repository": {
     "type": "git",
     "url": "https://github.com/bennyj121/hospital-price-series.git"
