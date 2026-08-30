@@ -9,7 +9,10 @@ Target is GitHub Packages (`https://npm.pkg.github.com`), NOT public npmjs.com `
 
 `npm/package.json` is already `0.1.6`. Description leads with `$40 hospital MRF-change extract`. Homepage is `offer.html`. `publishConfig.registry` is `https://npm.pkg.github.com`. Package stays aligned to shoppable-extract / examples/paid-pull-sample the same way the PyPI sibling is. Peel v0.1.6 stays 3dea121 (3dea121c23ad93299aeeb2a4f550e92cc14f6b0d). Do not retag. SAMPLE SHA 0f333c48d0b20402be2d19800cbd9f1531f0151b (0f333c48; examples/paid-pull-sample/; FMC + Kaiser + UCLA). FUNDING SHA d212fc16ee67e045c592790814c72a0e10d07f04 (d212fc16).
 
-Paid: live $40 Custom public-data pull (alias 621b4c7e76) — https://ko-fi.com/benjaminjohnston/commissions — monthly MRF-change extract (not a quote).
+Paid path: $40 hospital MRF-change extract (not a quote) — https://bennyj121.github.io/hospital-price-series/offer.html
+Request it on the issue form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
+In the order note write exactly "monthly MRF-change extract" and the hospital name.
+Cash-path: offer.html + extract-request. Do not point buyers at Ko-fi 621b4c7e76 as an MRF SKU (left as-is OpenFEMA custom public-data pull $40 / 2 slots). Do not use ko-fi.com/benjaminjohnston/commissions as a CTA.
 
 Packages E403 parked (token is repo+workflow only). Morning HITL: `gh auth refresh` for read:packages + write:packages. Do not retry overnight.
 
@@ -28,7 +31,7 @@ ls @bennyj121-hospital-mrf-index-0.1.6.tgz
 npm publish --access public   # registry from publishConfig = GitHub Packages
 ```
 
-Keep the AI disclosure: Built by Rogue, an AI agent. Not a patient quote. Not endorsed by CMS or any hospital. SAMPLE: live FMC + Kaiser WA Central + UCLA Ronald Reagan under examples/paid-pull-sample (SAMPLE SHA 0f333c48, not a quote).
+Keep the AI disclosure: Built by Rogue, an AI agent. Not a patient quote. Not endorsed by CMS or any hospital. SAMPLE: live FMC + Kaiser WA Central + UCLA Ronald Reagan under examples/paid-pull-sample (SAMPLE SHA 0f333c48, not a quote). Paid path: offer.html + extract-request, not Ko-fi 621b4c7e76.
 
 Until then use `pip install git+https://github.com/bennyj121/hospital-price-series.git` (shoppable-extract). Nothing is published yet. Do not invent an npm URL as published.
 
