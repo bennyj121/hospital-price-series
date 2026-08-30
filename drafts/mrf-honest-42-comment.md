@@ -14,7 +14,7 @@ Search (2026-08-30 12:00 AM PT; gh api search/issues + gh search prs + WebSearch
 
 Skipped (do not draft, do not post):
 - bennyj121 repos; hospital-price-series#1 Kaiser / #2 UCLA (our issues; out of scope). Do not invent issue #3.
-- ChelseaKR/mrf-honest#28 (already HITL drafted SHA aec54f49) — this draft is the open PR that closes it, not the issue
+- ChelseaKR/mrf-honest#28 (already HITL drafted SHA 2db175e4) — this draft is the open PR that closes it, not the issue
 - CMSgov/hospital-price-transparency discussions/219 (already HITL drafted SHA c90f198b)
 - EndurantDevs/healthcare-mrf-api#767 (open; CodeRabbit-only comment; facility-alias registry dump, not a human support thread). #766 ptg2 payer NPI / #762 plan-pricing census (payer, not hospital HPT). Merged hospital-prices PRs 702–765: rapid-fire, CodeRabbit, already have drafts/healthcare-mrf-api-comment.md
 - jatishay07/everyfront PRs 6/12/27/42 (merged; already have drafts/everyfront-comment.md)
@@ -33,8 +33,10 @@ An AI drafted this; Benjamin/Atlas reviews before any post.
 - Tag peel: 3dea121 (do not retag; peel stays 3dea121c23ad93299aeeb2a4f550e92cc14f6b0d)
 - SAMPLE pack SHA 0f333c48d0b20402be2d19800cbd9f1531f0151b — examples/paid-pull-sample (FMC + Kaiser + UCLA)
 - FUNDING SHA d212fc16ee67e045c592790814c72a0e10d07f04
-- Primary CTA: https://ko-fi.com/s/621b4c7e76
-- Secondary (house style): https://ko-fi.com/benjaminjohnston/commissions
+- Primary CTA: https://bennyj121.github.io/hospital-price-series/offer.html
+- Request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
+- Free Marketplace Action: https://github.com/marketplace/actions/hospital-mrf-index (@v0.1.6)
+- Cash-path: offer.html + extract-request. Do not soft-offer Ko-fi 621b4c7e76 (left as-is OpenFEMA custom public-data pull $40). Do not use ko-fi.com/benjaminjohnston/commissions as a CTA.
 - Do not invent a Marketplace URL. Marketplace listings stay morning HITL. Do not claim the $40 short-description edit is live.
 - Do not retag v0.1.6. Do not ship Action 022. Do not open listing UI. Do not open PRs. Do not email. Do not post this comment.
 
@@ -46,6 +48,11 @@ This PR is the CSV completeness fix for charged rows that still owe `description
 
 A SAMPLE of the follow-on monthly MRF-change extract is on peel 3dea121 / v0.1.6 under `examples/paid-pull-sample`: https://github.com/bennyj121/hospital-price-series/tree/main/examples/paid-pull-sample
 
-If a dated public-data pull of MRF changes would help next to the CSV cohort re-assess this branch is waiting on, there is a $40 custom extract: https://ko-fi.com/s/621b4c7e76
+If a dated public-data pull of MRF changes would help next to the CSV cohort re-assess this branch is waiting on, that is a $40 hospital MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html
 
-In the order note write “monthly MRF-change extract”. Not a quote, bill, or coverage determination. Not endorsed by CMS or any hospital. An AI drafted this; Benjamin reviews before any post.
+Request it on the issue form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
+In the order note write “monthly MRF-change extract”.
+
+Free index Action (one-liner): https://github.com/marketplace/actions/hospital-mrf-index (@v0.1.6).
+
+Not a quote, bill, or coverage determination. Not endorsed by CMS or any hospital. Sharing in case a dated extract is useful — no ask. An AI drafted this; Benjamin reviews before any post.
