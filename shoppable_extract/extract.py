@@ -62,8 +62,10 @@ def main() -> int:
         epilog=(
             chr(36)
             + "40 hospital MRF-change extract (not a quote)\n"
-            + "https://bennyj121.github.io/hospital-price-series/offer.html\n"
-            + "SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)\nKaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior\nUCLA Health SAMPLE (not a quote): ucla-ronald-reagan-sample.csv — cms-hpt / index LM Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior"
+            + "https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml\n"
+            + "SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv). Peel 3dea121 / SAMPLE 0f333c48\n"
+            + "Offer page: https://bennyj121.github.io/hospital-price-series/offer.html\n"
+            + "Kaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior\nUCLA Health SAMPLE (not a quote): ucla-ronald-reagan-sample.csv — cms-hpt / index LM Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -121,8 +123,10 @@ def main() -> int:
             n += 1
     print(f"rows={n} out={out} cpts_requested={len(wanted)} cpts_found={n}")
     print(chr(36) + "40 hospital MRF-change extract (not a quote)")
-    print("https://bennyj121.github.io/hospital-price-series/offer.html")
-    print("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv)\nKaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior\nUCLA Health SAMPLE (not a quote): ucla-ronald-reagan-sample.csv — cms-hpt / index LM Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior")
+    print("https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml")
+    print("SAMPLE at examples/sample-mrf-change/ (fmc-mrf-change-sample.csv). Peel 3dea121 / SAMPLE 0f333c48")
+    print("Offer page: https://bennyj121.github.io/hospital-price-series/offer.html")
+    print("Kaiser moved-index SAMPLE (not a quote): kaiser-wa-central-sample.csv — cms-hpt.txt Last-Modified 21 Aug → 28 Aug 2026; cells_changed=no-prior\nUCLA Health SAMPLE (not a quote): ucla-ronald-reagan-sample.csv — cms-hpt / index LM Fri 28 Aug 2026 09:34:59 GMT; Ronald Reagan last_updated_on 2026-03-29; cells_changed=no-prior")
     return 0 if n else 1
 
 
