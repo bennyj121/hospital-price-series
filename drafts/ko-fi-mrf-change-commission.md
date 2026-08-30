@@ -1,108 +1,63 @@
-# HITL DRAFT ONLY — Ko-fi CREATE dedicated hospital MRF-change extract commission
+# HITL DRAFT ONLY — Ko-fi MRF-change commission parked; paid path is offer.html
 
-Status: HITL DRAFT ONLY. Do not create the item. Do not post. Do not open the Ko-fi editor. Do not log in. Do not retarget the live OpenFEMA / custom public-data pull. Do not invent a new Ko-fi URL. Do not ship Action 022. Do not fold into the HITL pack this window.
+Status: PARK / REPOINT. NOT a morning CREATE new Ko-fi commission product. Do not log in. Do not create. Do not edit. Do not post. Do not open the Ko-fi editor. Do not invent a new Ko-fi URL. Do not ship Action 022. Do not instruct Atlas to create a Ko-fi commission. Do not retarget the live OpenFEMA / custom public-data pull.
 
-An AI (Rogue) drafted this. Benjamin reviews before any Ko-fi CREATE. Marketplace Fetch-cms-hpt and 015–021 stay morning HITL.
+An AI (Rogue) drafted this park/repoint. Buyers go to live offer.html + the extract-request form. Honest.
 
-## Live public-read (do not treat as already the MRF-change extract)
+This file was a CREATE draft (commit `ae1ae29e582450f2fc2507eccb252ca0460db851` / blob `27f17e0d102aa22f25ff55391823e7fb4ec96fb4`) for a dedicated $40 Ko-fi **commission** (monthly hospital MRF-change extract). That CREATE is parked. Do not create it. Atlas does not create a Ko-fi commission from this draft.
 
-Fetched 2026-08-30 ~00:23 PT (2026-08-30 07:23 UTC). Public read only. No login.
+## Paid path (live)
 
-- Alias `621b4c7e76` URL `https://ko-fi.com/s/621b4c7e76` HTTP 302 → `https://ko-fi.com/U0T52573ZP/commissions`
-- Commissions page `https://ko-fi.com/benjaminjohnston/commissions` (same Rogue Tools page)
-- Public catalog JSON `GET https://ko-fi.com/shop/U0T52573ZP/items/0/20?productType=1` (one commission)
+Buyers use the live offer page and the extract-request form. Not a new Ko-fi commission. Not Ko-fi 621b4c7e76. Not a new Ko-fi URL.
 
-Live `621b4c7e76` fields:
+- Offer: https://bennyj121.github.io/hospital-price-series/offer.html
+- Request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
+- Peel: `3dea121c23ad93299aeeb2a4f550e92cc14f6b0d` (3dea121; do not retag v0.1.6)
+- SAMPLE pack: `examples/paid-pull-sample` SHA `0f333c48d0b20402be2d19800cbd9f1531f0151b` (0f333c48; FMC + Kaiser + UCLA)
+- FUNDING: `d212fc16ee67e045c592790814c72a0e10d07f04` (d212fc16) — still points at the live OpenFEMA commissions URL plus offer.html; do not rewrite FUNDING from this file
+- Free Action: https://github.com/marketplace/actions/hospital-mrf-index (@v0.1.6)
+- Sample (not a quote): https://github.com/bennyj121/hospital-price-series/tree/main/examples/paid-pull-sample
 
-| Field | Live value |
-|---|---|
-| Title | Custom public-data pull (OpenFEMA or similar) |
-| Price | $40 (Pay what you want) |
-| Slots | 2 left (`LimitItemsEnabled: true`, `ItemsAvailable: 2`, `IsSoldOut: false`) |
-| Orders | 0 |
-| Alias | 621b4c7e76 |
-| ID | 032bbde7-08c7-4695-a80a-648be424f571 |
+Exact order-note phrase (already live on offer.html): `monthly MRF-change extract`
 
-Live description (verbatim):
+Cash-path: offer.html + extract-request. Do not point buyers at Ko-fi 621b4c7e76 as an MRF SKU (left as-is OpenFEMA custom public-data pull $40 / 2 slots). Do not use ko-fi.com/benjaminjohnston/commissions as a CTA for hospital MRF.
 
-```
-I am Rogue, an AI agent — not a human. Benjamin Johnston is the payee and receives Ko-fi payouts.
+## Live Ko-fi 621b4c7e76 (leave completely alone)
 
-I will fetch a dated snapshot of a U.S. public dataset you name (OpenFEMA tables, or another official open federal API that needs no key), enrich timestamps/codes the same way as the FEMA Data Series, and deliver CSV or parquet plus a short column note.
+Live alias `621b4c7e76` remains the OpenFEMA / custom public-data pull **commission**, not a hospital MRF-change extract. Do not retarget. Do not rename. Do not edit.
 
-This is payment for packaging, enrichment, and a dated file — not exclusive rights to public records, and not a FEMA or DHS product. This product uses the Federal Emergency Management Agency’s OpenFEMA API when the source is OpenFEMA, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency’s website(s).
+- Alias `621b4c7e76` URL `https://ko-fi.com/s/621b4c7e76`
+- Commissions page `https://ko-fi.com/benjaminjohnston/commissions`
+- Live title still “Custom public-data pull (OpenFEMA or similar)” $40, 2 slots
 
-In your request, name the dataset, any filters (state, year, disaster number), and CSV vs parquet.
-```
-
-Decision: live title is still OpenFEMA / custom public-data pull, not a hospital MRF-change extract. Do not retarget `621b4c7e76`. Leave it as-is. CREATE a separate dedicated commission (HITL). Ko-fi will assign the new alias/URL on create — do not invent one in this draft or anywhere else.
-
-Until CREATE happens, buyers still use the live OpenFEMA item with the offer.html order-note fallback below.
-
-## offer.html order-note sentence (already live on the repo)
-
-From `docs/offer.html` at parent HEAD:
-
-```
-In the order note write exactly “monthly MRF-change extract” and the hospital name.
-```
-
-Exact order-note phrase: `monthly MRF-change extract`
+Fetched 2026-08-30 ~00:23 PT (public read only; no login): title Custom public-data pull (OpenFEMA or similar); $40; 2 slots left. Decision: leave it as-is.
 
 ## Action for HITL
 
-CREATE a new Ko-fi **commission** (product type Commission), dedicated $40 monthly hospital MRF-change extract. Paste the fields below. Do not edit `621b4c7e76`. Do not open Marketplace listing UI from this draft.
+None. Do not CREATE a Ko-fi commission. Do not CREATE a Ko-fi shop SKU. Atlas does not create a Ko-fi product from this draft. The morning CREATE is parked. Buyers already have live offer.html + extract-request.
 
-## Suggested CREATE fields (ready to paste)
+## Distinct from (leave untouched)
 
-Title (exact):
-
-```
-$40 hospital MRF-change extract
-```
-
-Price: `$40` or more. Match the live OpenFEMA item UX: Pay what you want, minimum `$40`.
-
-Slots: Limit items enabled, `2` slots (same live capacity as `621b4c7e76`; HITL may raise).
-
-Description (exact, paste as-is):
-
-```
-I am Rogue, an AI agent — not a human. Benjamin Johnston is the payee and receives Ko-fi payouts.
-
-$40 monthly hospital MRF-change extract (not a quote). A dated cash-plus-named-payer CSV for CPT codes you name, from a public hospital machine-readable file. When that hospital’s published file changes (last_updated_on or the zip Last-Modified), you get the new extract.
-
-This is payment for packaging and a dated extract — not exclusive rights. The hospital owns the listed MRF. Not a patient quote, bill, allowed amount, or coverage determination. Not endorsed by CMS, HHS, or any hospital. No PHI.
-
-In the order note write exactly “monthly MRF-change extract” and the hospital name.
-
-Then file the request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml
-
-Free Action: https://github.com/marketplace/actions/hospital-mrf-index
-Offer: https://bennyj121.github.io/hospital-price-series/offer.html
-Sample (not a quote): https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change
-```
-
-Other CREATE toggles (HITL):
-
-- Type: Commission (not Shop download)
-- Pay what you want: yes, minimum $40
-- Limit number of orders: yes, 2 slots
-- Exclusive to subscribers / member-only: no
-- Requires shipping: no
-- Add-ons: none
-- Exclusive rights: no (public hospital MRF; hospital owns the file)
-- Do not attach a hand-invented `ko-fi.com/s/…` or `ko-fi.com/c/…` URL; Ko-fi assigns the alias after CREATE
+| Item | SHA / alias | Status |
+|---|---|---|
+| Live OpenFEMA commission | alias `621b4c7e76` · `https://ko-fi.com/s/621b4c7e76` | Live title still “Custom public-data pull (OpenFEMA or similar)” $40, 2 slots. Do not retarget. |
+| Commissions page | `https://ko-fi.com/benjaminjohnston/commissions` | Leave as-is. Do not use as hospital MRF CTA. |
+| Parked SKU CREATE | `drafts/ko-fi-mrf-change-sku.md` | Same park/repoint. Not a morning CREATE shop SKU. |
 
 ## Do not
 
 - Do not log in, create, or edit Ko-fi from this window
 - Do not open the Ko-fi editor
 - Do not create the item
+- Do not instruct Atlas to create a Ko-fi commission
 - Do not post
 - Do not retarget or rename `621b4c7e76` / “Custom public-data pull (OpenFEMA or similar)”
 - Do not invent a new Ko-fi URL
+- Do not treat this as a morning CREATE
 - Do not ship Action 022
 - Do not open Marketplace listing UI
-- Do not fold into the HITL pack this window
+- Do not retag v0.1.6
+- Do not invent issue #3
 - Do not ping Benjamin from this commit
+- Do not start SourceHut/Gitea/Gitee
+- Do not open GitHub Issues/Discussions/PRs
