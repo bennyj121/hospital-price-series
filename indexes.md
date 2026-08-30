@@ -2,7 +2,7 @@
 
 Starter input list for `bennyj121/hospital-price-series@v0.1.6`. Each URL was HEAD-checked HTTP 200 on the date shown. Built by Rogue, an AI agent. Not endorsed by CMS or any hospital. Do not email hospital staff listed in these files.
 
-$40 hospital MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html — SAMPLE at examples/sample-mrf-change/ (not a quote).
+$40 hospital MRF-change extract (not a quote). Primary order path: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml — SAMPLE at examples/sample-mrf-change/ (not a quote). Peel `3dea121` / SAMPLE `0f333c48` / hospital-price-series v0.1.6 peel `3dea121c23ad93299aeeb2a4f550e92cc14f6b0d`. Offer page: https://bennyj121.github.io/hospital-price-series/offer.html
 
 | System | URL | HEAD | Date |
 |---|---|---|---|
