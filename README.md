@@ -2,19 +2,19 @@
 
 The free GitHub Action is `hospital-mrf-index`: https://github.com/marketplace/actions/hospital-mrf-index.
 
-Paid offer (not a quote): monthly MRF-change extract, existing \$40 Ko-fi commission — https://ko-fi.com/benjaminjohnston/commissions (title: Custom public-data pull). Offer page: https://bennyj121.github.io/hospital-price-series/offer.html
+Paid offer (not a quote): monthly MRF-change extract. Primary order path is the extract-request issue form. Offer page: https://bennyj121.github.io/hospital-price-series/offer.html
 
 [Request an extract](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml)
 
 ## How to order
 
-1. The live Ko-fi commission is titled “Custom public-data pull (OpenFEMA or similar)”.
-2. Pay \$40+ on [ko-fi.com/benjaminjohnston/commissions](https://ko-fi.com/benjaminjohnston/commissions).
-3. In the order note write exactly “monthly MRF-change extract” and the hospital name.
-4. Then file the [issue form](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
+Open the extract-request issue form. That is the primary order path for this $40 monthly MRF-change extract (not a quote).
 
+1. File the request: [github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml](https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml).
+2. Put the public hospital `cms-hpt.txt` URL and the CPT list in the form.
+3. See the public SAMPLE first (not a quote): [examples/sample-mrf-change/](examples/sample-mrf-change/) ([fmc-mrf-change-sample.csv](examples/sample-mrf-change/fmc-mrf-change-sample.csv)). Peel `3dea121` / SAMPLE `0f333c48` / hospital-price-series v0.1.6 peel `3dea121c23ad93299aeeb2a4f550e92cc14f6b0d`.
 
-Dated Last-Modified baseline for the \$40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
+Dated Last-Modified baseline for the $40 change watch (2026-08-26): [data/index-head-2026-08-26.txt](data/index-head-2026-08-26.txt)
 
 A Last-Modified header that moves backward is not a billed change.
 

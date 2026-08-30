@@ -63,9 +63,10 @@ runs:
         {
           echo "## hospital-mrf-index"
           echo ""
-          echo 'Paid: $40 hospital MRF-change extract (not a quote) — https://ko-fi.com/benjaminjohnston/commissions (title: Custom public-data pull)'
+          echo 'Paid: $40 hospital MRF-change extract (not a quote). Primary order path: extract-request issue form.'
           echo ""
           echo "- Request form: https://github.com/bennyj121/hospital-price-series/issues/new?template=mrf-extract-request.yml"
+          echo "- SAMPLE (not a quote): peel 3dea121 / SAMPLE 0f333c48 — https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change"
           echo "- Buyer-facing SAMPLE of a $40 order: https://github.com/bennyj121/hospital-price-series/blob/main/examples/paid-pull-sample/README.md"
           echo "- SAMPLE (not a quote): FMC https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/fmc-mrf-change-sample.csv"
           echo "- Kaiser moved-index SAMPLE (21 Aug → 28 Aug 2026, cells_changed=no-prior): https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/kaiser-wa-central-sample.csv"
