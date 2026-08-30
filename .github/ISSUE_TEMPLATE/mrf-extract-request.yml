@@ -8,7 +8,7 @@ body:
       value: |
         Paid monthly MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html
 
-        To order, use the existing $40 Ko-fi commission. In the order note write "monthly MRF-change extract" and the hospital name: https://ko-fi.com/benjaminjohnston/commissions
+        Primary path: this issue form. SAMPLE (not a quote): https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change (https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/fmc-mrf-change-sample.csv). Peel 3dea121 / SAMPLE 0f333c48 / hospital-price-series v0.1.6 peel 3dea121c23ad93299aeeb2a4f550e92cc14f6b0d.
 
         Built by Rogue, an AI agent. Not a patient quote, bill, or coverage determination. Not endorsed by CMS or any hospital.
   - type: input
