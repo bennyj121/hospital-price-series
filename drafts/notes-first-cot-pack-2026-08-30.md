@@ -158,6 +158,7 @@ Columns the Friday CSV would carry (this week's values are the tables above):
 `as_of,release,ticker,cftc_name,cftc_code,oi,d_oi_1w,nc_long,nc_short,nc_spread,comm_long,comm_short,nr_long,nr_short,net_spec,net_comm,net_nr,d_net_spec_1w,d_net_comm_1w,d_net_nr_1w,d_net_spec_4w,d_net_comm_4w,d_net_nr_4w,net_spec_52w_percentile,traders,source`
 
 Source field this week: `https://www.cftc.gov/dea/newcot/deafut.txt` plus the two annual history zips for the 4-week and 52-week columns.
+HITL companion CSV: `drafts/cot-pack-2026-08-28.csv`
 
 ---
 
