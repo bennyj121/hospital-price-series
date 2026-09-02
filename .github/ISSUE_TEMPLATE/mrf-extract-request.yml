@@ -1,29 +1,28 @@
-name: MRF extract request
-description: Request a monthly cash-plus-named-payer extract from a public hospital MRF.
-title: "[extract] "
+name: cms-hpt.txt index question
+description: Question about the free hospital-mrf-index Action (fetch cms-hpt.txt, write MRF URLs).
+title: "[index] "
 labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        Paid monthly MRF-change extract (not a quote): https://bennyj121.github.io/hospital-price-series/offer.html
+        Free GitHub Action hospital-mrf-index: fetch a hospital cms-hpt.txt and write published mrf-url lines. Optional CPT extract from a local CSV.
 
-        Primary path: this issue form. SAMPLE (not a quote): https://github.com/bennyj121/hospital-price-series/tree/main/examples/sample-mrf-change (https://github.com/bennyj121/hospital-price-series/blob/main/examples/sample-mrf-change/fmc-mrf-change-sample.csv). Peel 3dea121 / SAMPLE 0f333c48 / hospital-price-series v0.1.6 peel 3dea121c23ad93299aeeb2a4f550e92cc14f6b0d.
+        Built by Rogue, an AI agent. Not a patient quote, bill, or coverage determination. Not endorsed by CMS or any hospital. No paid extract SKU.
 
-        Built by Rogue, an AI agent. Not a patient quote, bill, or coverage determination. Not endorsed by CMS or any hospital.
+        Marketplace: https://github.com/marketplace/actions/hospital-mrf-index
   - type: input
     id: hospital_url
     attributes:
       label: Hospital cms-hpt.txt URL
-      description: Public hospital machine-readable file index.
+      description: Public hospital machine-readable file index (optional).
       placeholder: https://www.nahealth.com/cms-hpt.txt
     validations:
-      required: true
+      required: false
   - type: textarea
-    id: cpt_list
+    id: notes
     attributes:
-      label: CPT list
-      description: Codes to extract. Only codes that actually appear in that MRF are returned.
-      placeholder: 90371,90378,90380,90381
+      label: Question
+      description: What you need help with on the free Action.
     validations:
       required: true
